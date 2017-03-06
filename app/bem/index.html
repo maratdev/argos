@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<!-- (c) Sergey Gromkov | http://gromkov.ru/ -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html">
+
+    <title>ТД Фанера - продажа фанеры по ценам завода изготовителя</title>
+    <meta name="keywords" content="1С-Битрикс, CMS, PHP, bitrix, система управления контентом"/>
+    <meta name="description"
+          content="Наша компания является дилером крупнейших производителей древесных композитов (фанеры) в России с 2007 года"/>
+    <meta name='yandex-verification' content='44377fda64ef6fd5'/>
+
+    <link rel="icon" href="/images/items/favicon.ico" type="image/x-icon">
+
+
+    <link href="/bitrix/js/main/core/css/core.css?14350569498964" type="text/css" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=latin,cyrillic-ext"
+          type="text/css" rel="stylesheet"/>
+    <link href="/css/flexslider.css?14350569774460" type="text/css" rel="stylesheet"/>
+    <link href="/css/fancybox.css?14350569775033" type="text/css" rel="stylesheet"/>
+    <link href="/css/common.css?143748591620947" type="text/css" rel="stylesheet"/>
+
+    <script type="text/javascript">if (!window.BX)window.BX = {
+        message: function (mess) {
+            if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i];
+            return true;
+        }
+    };</script>
+    <script type="text/javascript">(window.BX || top.BX).message({
+        'JS_CORE_LOADING': 'Загрузка...',
+        'JS_CORE_NO_DATA': '- Нет данных -',
+        'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+        'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+        'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+        'JS_CORE_WINDOW_SAVE': 'Сохранить',
+        'JS_CORE_WINDOW_CANCEL': 'Отменить',
+        'JS_CORE_H': 'ч',
+        'JS_CORE_M': 'м',
+        'JS_CORE_S': 'с',
+        'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+        'JSADM_AI_ALL_NOTIF': 'Показать все',
+        'JSADM_AUTH_REQ': 'Требуется авторизация!',
+        'JS_CORE_WINDOW_AUTH': 'Войти',
+        'JS_CORE_IMAGE_FULL': 'Полный размер'
+    });</script>
+    <script type="text/javascript">(window.BX || top.BX).message({
+        'LANGUAGE_ID': 'ru',
+        'FORMAT_DATE': 'DD.MM.YYYY',
+        'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+        'COOKIE_PREFIX': 'BITRIX_SM',
+        'USER_ID': '',
+        'SERVER_TIME': '1482161402',
+        'SERVER_TZ_OFFSET': '10800',
+        'USER_TZ_OFFSET': '0',
+        'USER_TZ_AUTO': 'Y',
+        'bitrix_sessid': '2a95dc3606cfff0cc43a0bcb03bc6b34',
+        'SITE_ID': 'RU'
+    });</script>
+
+
+    <script type="text/javascript" src="/bitrix/js/main/core/core.js?143505694978911"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?143505694930654"></script>
+    <script type="text/javascript" src="/bitrix/js/main/session.js?14350569492880"></script>
+
+    <script type="text/javascript">
+        bxSession.Expand(1440, '2a95dc3606cfff0cc43a0bcb03bc6b34', false, '77e616a934779f3ec6ed2808b599820d');
+    </script>
+
+</head>
+
+<body>
+<header class="header">
+    <div class="narrow">
+        <div class="header__logo">
+            <!-- <a href="/" class="logo">ТД Фанера</a> -->
+            <a href="/" class="logo">
+                <img src="/images/items/logo/logo.jpg" alt="ТД Фанера" class="logo__img">
+            </a></div>
+        <div class="header__menu">
+            <ul class="menu menu_header">
+                <li class="menu__item">
+                    <a class="menu__link" onclick="slideToAbout()">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" onclick="slideToGoods()">Продукция</a>
+                </li>
+                <li class="menu__item">
+                    <a href="/price/" class="menu__link ">Прайс-лист</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#popup_calc" class="menu__link fancybox">Калькулятор</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" onclick="slideToContacts()">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__contacts">
+            <div class="hc">
+                <div class="hc__text">
+                    <a class="hc__phone"><span class="ya-phone">+7 (495) 783-72-18</span></a>
+
+                    <p class="hc__label">Не знаете какую фанеру выбрать?<br>Звоните, поможем!</p>
+                </div>
+                <div class="hc__button">
+                    <a href="#popup_call" class="button fancybox">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="adv">
+        <div class="narrow">
+            <div class="adv__title">
+                <h1 class="title title_adv">Фанера по ценам завода изготовителя!</h1>
+            </div>
+            <div class="adv__subtitle">Доставка или самовывоз в день звонка.</div>
+            <div class="adv__button">
+                <a href="#popup_calc_simple" class="button button_adv fancybox">Узнайте точную стоимость</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="partners">
+        <div class="narrow">
+            <div class="flexslider flexslider_partners">
+                <ul class="slides">
+                    <li><img src="/upload/iblock/d58/1.png" alt="Ilim Timber Industry"></li>
+                    <li><img src="/upload/iblock/b4e/2.jpg" alt="Свеза"></li>
+                    <li><img src="/upload/iblock/f78/3.jpg" alt="Krono"></li>
+                    <li><img src="/upload/iblock/819/4.png" alt="Инвестлеспром"></li>
+                    <li><img src="/upload/iblock/00c/5.png" alt="Башлесэкспорт"></li>
+                    <li><img src="/upload/iblock/3d3/6.png" alt="Kronospan"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="goods">
+        <a name="goods" style="display: inline;"></a>
+
+        <div class="narrow">
+            <div class="goods__title">
+                <h2 class="title">Продукция</h2>
+            </div>
+
+            <ul class="goods__list clearfix">
+                <li class="goods__item" style="margin-left: 0;">
+                    <div class="goods__block" onclick="showProduct(this, 1)">
+                        <div class="goods__img-wrapper">
+                            <img src="/upload/resize_cache/iblock/35e/370_370_1/2.png" class="goods__img"
+                                 alt="Фанера ФК">
+                        </div>
+                        <div class="goods__name">Фанера ФК</div>
+                    </div>
+                </li>
+                <li class="goods__item">
+                    <div class="goods__block" onclick="showProduct(this, 2)">
+                        <div class="goods__img-wrapper">
+                            <img src="/upload/iblock/aca/fsf.png" class="goods__img" alt="Фанера ФСФ">
+                        </div>
+                        <div class="goods__name">Фанера ФСФ</div>
+                    </div>
+                </li>
+                <li class="goods__item">
+                    <div class="goods__block" onclick="showProduct(this, 3)">
+                        <div class="goods__img-wrapper">
+                            <img src="/upload/resize_cache/iblock/ea3/370_370_1/3.png" class="goods__img"
+                                 alt="Фанера ФСФ (Ламинированная)">
+                        </div>
+                        <div class="goods__name">Фанера ФСФ (Ламинированная)</div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="goods__detail goods__detail_close"></div>
+
+            <ul class="goods__list clearfix">
+                <li class="goods__item" style="margin-left: 0;">
+                    <div class="goods__block" onclick="showProduct(this, 4)">
+                        <div class="goods__img-wrapper">
+                            <img src="/upload/resize_cache/iblock/98c/370_370_1/4.png" class="goods__img" alt="OSB">
+                        </div>
+                        <div class="goods__name">OSB</div>
+                    </div>
+                </li>
+                <li class="goods__item">
+                    <div class="goods__block" onclick="showProduct(this, 5)">
+                        <div class="goods__img-wrapper">
+                            <img src="/upload/iblock/3f8/dvp.png" class="goods__img" alt="ДВП">
+                        </div>
+                        <div class="goods__name">ДВП</div>
+                    </div>
+                </li>
+                <li class="goods__item">
+                    <div class="goods__block" onclick="showProduct(this, 6)">
+                        <div class="goods__img-wrapper">
+                            <img src="/upload/resize_cache/iblock/4af/370_370_1/5.png" class="goods__img" alt="ДСП">
+                        </div>
+                        <div class="goods__name">ДСП</div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="goods__button">
+                <a href="#popup_calc" class="button button_calc fancybox">Калькулятор фанеры</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="use">
+        <div class="narrow">
+            <div class="use__title">
+                <h2 class="title">Где используют нашу фанеру?</h2>
+            </div>
+            <div class="use__block">
+                <div class="use__top">
+                    <ol class="use__nav">
+                        <li class="use__navitem use__navitem_0 use__navitem_active">Кровля</li>
+                        <li class="use__navitem use__navitem_1 ">Полы</li>
+                        <li class="use__navitem use__navitem_2 ">Стены</li>
+                        <li class="use__navitem use__navitem_3 ">Опалубка</li>
+                        <li class="use__navitem use__navitem_4 ">Производство</li>
+                    </ol>
+                </div>
+                <div class="use__slider">
+                    <div class="flexslider flexslider_use">
+                        <ul class="slides">
+                            <li><img src="/upload/resize_cache/iblock/a02/956_536_1/1.jpg" alt="Кровля"></li>
+                            <li><img src="/upload/resize_cache/iblock/599/956_536_1/2.jpg" alt="Полы"></li>
+                            <li><img src="/upload/resize_cache/iblock/8df/956_536_1/3.jpg" alt="Стены"></li>
+                            <li><img src="/upload/resize_cache/iblock/4ca/956_536_1/4.jpg" alt="Опалубка"></li>
+                            <li><img src="/upload/resize_cache/iblock/f40/956_536_1/5.jpg" alt="Производство"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="use__button">
+            <a href="#popup_calc_simple" class="button fancybox">Заказать фанеру</a>
+        </div>
+    </div>
+
+    <a name="about" style="display: inline;"></a>
+
+    <div class="company">
+        <div class="narrow">
+            <div class="company__block">
+                <div class="company__text">Наша компания является дилером крупнейших производителей древесных композитов
+                    (фанеры) в России с 2007 года,за это время мы внедрили контроль качества предлагаемой продукции и
+                    снизили стоимость за счет объёмов реализации.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages">
+        <div class="narrow">
+            <div class="advantages__title">
+                <h2 class="title">6 причин работать с нами</h2>
+            </div>
+            <div class="advantages__list">
+                <div class="advantages__item" style="margin-left: 0">
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img src="/upload/iblock/a5a/1.png" class="advantage__img" alt="Фанера всегда в наличии">
+                        </div>
+                        <div class="advantage__title">Фанера всегда в наличии</div>
+                        <div class="advantage__desc">Мы бесперебойно обеспечиваем своих клиентов продукцией с
+                            собственного склада независимо от сезона.
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img src="/upload/iblock/98e/2.png" class="advantage__img" alt="Удобная оплата">
+                        </div>
+                        <div class="advantage__title">Удобная оплата</div>
+                        <div class="advantage__desc">Мы работаем с юридическими и физическими лицами. Варианты расчетов:
+                            предоплата, оплата по факту отгрузки, возможна отсрочка.
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img src="/upload/iblock/bf6/3.png" class="advantage__img" alt="Выгодные цены">
+                        </div>
+                        <div class="advantage__title">Выгодные цены</div>
+                        <div class="advantage__desc">Мы реализуем фанеру в больших объёмах с 8 заводов России и СНГ,
+                            поэтому предлагаем своим клиентам наиболее выгодные цены.
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__item" style="margin-left: 0">
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img src="/upload/iblock/994/4.png" class="advantage__img" alt="Своевременная доставка">
+                        </div>
+                        <div class="advantage__title">Своевременная доставка</div>
+                        <div class="advantage__desc">Собственный парк автомобилей грузоподъёмностью от 1 до 20 тонн
+                            позволяет оперативно доставлять продукцию в любой район Москвы и области.
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img src="/upload/iblock/dcd/5.png" class="advantage__img" alt="Контроль качества">
+                        </div>
+                        <div class="advantage__title">Контроль качества</div>
+                        <div class="advantage__desc">Вся реализуемая нами продукция проходит контроль качества в
+                            специализированных лабораториях и имеет соответствующие сертификаты.
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img src="/upload/iblock/c0d/6.png" class="advantage__img" alt="Офис и склад рядом">
+                        </div>
+                        <div class="advantage__title">Офис и склад рядом</div>
+                        <div class="advantage__desc">Благодаря удобному расположению офиса и склада Вы получаете полный
+                            пакет документов одновременно с отгружаемой продукцией.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__button">
+                <a href="#popup_calc_simple" class="button fancybox">Заказать фанеру</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="certificates">
+        <div class="narrow">
+            <div class="certificates__title">
+                <h2 class="title">Сертификаты</h2>
+            </div>
+            <div class="certificates__slider">
+                <div class="flexslider flexslider_certificates">
+                    <ul class="slides">
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/b88/800_800_15ca959c3b8404e881b24981bdd2b2dc2/udostoverenie-kachestva.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/b88/219_300_1/udostoverenie-kachestva.jpg"
+                                     class="certificates__img" alt="Удостоверение качества">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/a95/800_800_15ca959c3b8404e881b24981bdd2b2dc2/1.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/a95/219_300_1/1.jpg" class="certificates__img"
+                                     alt="Сертификат соответствия">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/dfd/800_800_15ca959c3b8404e881b24981bdd2b2dc2/2.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/dfd/219_300_1/2.jpg" class="certificates__img"
+                                     alt="Протокол КХА">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/69d/800_800_15ca959c3b8404e881b24981bdd2b2dc2/pasport.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/69d/219_300_1/pasport.jpg"
+                                     class="certificates__img" alt="Паспорт">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/82d/800_800_15ca959c3b8404e881b24981bdd2b2dc2/sertifikat-sootvetstviya.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/82d/219_300_1/sertifikat-sootvetstviya.jpg"
+                                     class="certificates__img" alt="Сертификат соответствия">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/6aa/800_800_15ca959c3b8404e881b24981bdd2b2dc2/sertifikat-dvp.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/6aa/219_300_1/sertifikat-dvp.jpg"
+                                     class="certificates__img" alt="Сертификат ДВП">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/1fb/800_800_15ca959c3b8404e881b24981bdd2b2dc2/sertifikat-sootvetstviya.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/1fb/219_300_1/sertifikat-sootvetstviya.jpg"
+                                     class="certificates__img" alt="Сертификат соответствия">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/5da/800_800_15ca959c3b8404e881b24981bdd2b2dc2/sep-1.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/5da/219_300_1/sep-1.jpg" class="certificates__img"
+                                     alt="СЭП 1">
+                            </a>
+                        </li>
+                        <li class="certificates__item">
+                            <a href="/upload/resize_cache/iblock/30b/800_800_15ca959c3b8404e881b24981bdd2b2dc2/sep-2.jpg"
+                               class="certificates__link fancybox" rel="certificates">
+                                <img src="/upload/resize_cache/iblock/30b/219_300_1/sep-2.jpg" class="certificates__img"
+                                     alt="СЭП 2">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="forqestions">
+        <div class="narrow">
+            <div class="forqestions__title">
+                <h2 class="title">Остались вопросы?</h2>
+            </div>
+            <div class="forqestions__subtitle">
+                Звоните <a href="tel:74957837218">+7 (495) 783-72-18</a> или пишите <a href="mailto:zakaz@fansklad.ru">zakaz@fansklad.ru</a>
+            </div>
+        </div>
+        <div class="forqestions__line"></div>
+        <div class="narrow">
+            <div class="forqestions__form">
+                <form class="form form_forqestions">
+                    <div class="forqestions__label">
+                        <label for="fq_phone" class="label_forqestions"
+                               style="font-size: 16px; font-weight: normal; margin: 0">Или оставьте свой номер и мы сами
+                            перезвоним</label>
+                    </div>
+                    <div class="forqestions__inputs">
+                        <input type="text" placeholder="Телефон" id="fq_phone" required
+                               data-inputmask="'mask': '+7 (999) 999-99-99'" class="forqestions__input_phone">
+                        <input type="text" placeholder="Имя" id="fq_name" required class="forqestions__input_name">
+                        <input type="submit" class="button button_black" value="Заказать звонок" style="width: 179px;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__contacts">
+        <div class="contacts">
+            <div class="contacts__title">
+                <h2 class="title">Контакты</h2>
+            </div>
+            <div class="contacts__address">
+                <div class="address">
+                    <div class="address__title">Адрес:</div>
+                    <div class="address__text">
+                        <!-- <p>109428, г. Москва, ул. 2-ая Институтская, д.&nbsp;6, стр.&nbsp;18, 3&nbsp;эт., офис&nbsp;31</p> -->
+                        <p>109456, г. Москва, Рязанский проспект, д.&nbsp;69, стр.&nbsp;13, офис&nbsp;1</p>
+                        <!-- <p>Проезд к&nbsp;нашему офису и&nbsp;складу происходит через КПП ул. 2-ая Институтская д.&nbsp;6, стр.21</p> -->
+                    </div>
+                    <div class="address__attention">Пожалуйста, сообщайте заранее о&nbsp;своём приезде.</div>
+                </div>
+            </div>
+            <div class="contacts__phones">
+                <div class="phones">
+                    <div class="phones__title">Телефоны:</div>
+                    <a class="phones__item" style="float: left;"><span class="ya-phone">+7(495) 783-72-18</span></a>
+                    <a class="phones__item" style="float: right;"><span class="ya-phone">+7(495) 504-75-60</span></a>
+                </div>
+            </div>
+            <div class="contacts__copyright">&copy;&nbsp;ООО &laquo;ТД Фанера&raquo;, 2015</div>
+        </div>
+    </div>
+    <div class="footer__map">
+        <div id="map" class="map"></div>
+
+        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+        <script>
+            var myMap;
+            ymaps.ready(init);
+            function init() {
+                myMap = new ymaps.Map('map', {
+                    // center: [55.72458628, 37.77344800],
+                    center: [55.71862305912981, 37.78723642261504],
+                    zoom: 17,
+                    controls: ["zoomControl", "fullscreenControl", "typeSelector"]
+                });
+                myMap.options.set('minZoom', 3);
+                myMap.behaviors.disable('scrollZoom');
+                myPlacemark = new ymaps.Placemark(
+                        // [55.72458628, 37.77344800], {}, {
+                        [55.71862305912981, 37.78723642261504], {}, {
+                            iconLayout: 'default#image',
+                            iconImageHref: '/images/items/map/placemark.png',
+                            iconImageSize: [40, 53],
+                            iconImageOffset: [-20, -53]
+                        });
+                myMap.geoObjects.add(myPlacemark);
+            }
+        </script>
+    </div>
+</footer>
+
+
+<div id="popup_call" class="popup" style="display: none; width: 435px;">
+    <div class="popup__body">
+        <div class="popup__title">Заказать звонок</div>
+        <div class="popup__form">
+            <form class="form form_simple form_call">
+                <div class="form__row">
+                    <label for="call__name">Ваше имя*</label>
+                    <input type="text" id="call__name" required>
+                </div>
+                <div class="form__row">
+                    <label for="call__phone">Телефон*</label>
+                    <input type="text" id="call__phone" required data-inputmask="'mask': '+7 (999) 999-99-99'">
+                </div>
+                <div class="form__warning">
+                    <span>*</span>
+                    Необходимые поля для заполнения
+                </div>
+                <div class="form__submit">
+                    <input type="submit" value="Отправить" class="button">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="popup_price" class="popup" style="display: none; width: 435px;">
+    <div class="popup__body">
+        <div class="popup__form">
+            <form class="form form_simple form_price">
+                <div class="form__row">
+                    <label for="price__name">Ваше имя*</label>
+                    <input type="text" id="price__name" required>
+                </div>
+                <div class="form__row">
+                    <label for="price__phone">Телефон</label>
+                    <input type="text" id="price__phone" data-inputmask="'mask': '+7 (999) 999-99-99'">
+                </div>
+                <div class="form__row">
+                    <label for="price__email">Email*</label>
+                    <input type="text" id="price__email" required
+                           data-inputmask="'mask': '*{1,64}[.*{1,64}][.*{1,64}][.*{1,64}]@*{1,64}[.*{2,64}][.*{2,6}][.*{1,2}]'"
+                           data-inputmask-greedy="false">
+                </div>
+                <!-- <div class="form__row">
+                    <label for="price__code">Введите код*</label><br>
+                    <input type="text" id="price__code" required style="width:50%">
+                    <img src="/images/tmp/code.png" style="float: right; margin-top: 3px;">
+                </div> -->
+                <div class="form__warning">
+                    <span>*</span>
+                    Необходимые поля для заполнения
+                </div>
+                <input type="hidden" id="price__fanera" value="">
+                <input type="hidden" id="price__material" value="">
+                <input type="hidden" id="price__price" value="">
+
+                <div class="form__submit">
+                    <input type="submit" value="Получить прайс-лист" class="button">
+                </div>
+                <div class="form__warning" align="center">Конфиденциальность переданных вами данных <b>гарантирована</b>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="popup_calc" class="popup" style="display: none; width: 830px;">
+    <div class="popup__body popup__body_calc" style="padding: 30px 0px">
+        <div class="popup__title" style="margin: 0 0 22px">Калькулятор фанеры</div>
+        <div class="popup__calc">
+            <div class="calc">
+                <div class="calc__forms">
+
+                    <form class="c-product" id="c-form_1">
+                        <div class="c-product__delete" title="удалить этот товар" onclick="removeCalcProduct(1)"></div>
+                        <div class="c-product__selects clearfix">
+                            <div class="c-product__select-block" style="width: 230px; margin-right: 15px; float: left;">
+                                <label class="c-product__select-label">Марка фанеры</label><br>
+                                <select class="c-product__select" name="MARKA" id="c-type_1">
+                                    <option value="0">Выбрать</option>
+                                    <option value="OSB">OSB</option>
+                                    <option value="ДВП">ДВП</option>
+                                    <option value="ДСП">ДСП</option>
+                                    <option value="ФК">ФК</option>
+                                    <option value="ФСФ">ФСФ</option>
+                                    <option value="ФСФ Ламинированная (Китай)">ФСФ Ламинированная (Китай)</option>
+                                    <option value="ФСФ Ламинированная (Россия)">ФСФ Ламинированная (Россия)</option>
+                                    <option value="ФСФ Хвоя">ФСФ Хвоя</option>
+                                </select>
+                            </div>
+                            <div class="c-product__select-block" style="width: 145px; margin-right: 15px; float: left;">
+                                <label class="c-product__select-label">Формат (мм)</label><br>
+                                <select class="c-product__select" name="FORMAT" id="c-size_1" disabled>
+                                </select>
+                            </div>
+                            <div class="c-product__select-block" style="width: 145px; margin-right: 15px; float: left;">
+                                <label class="c-product__select-label">Сорт</label><br>
+                                <select class="c-product__select" name="SORT" id="c-sort_1" disabled>
+                                </select>
+                            </div>
+                            <div class="c-product__select-block" style="width: 115px; float: left;">
+                                <label class="c-product__select-label">Толщина (мм)</label><br>
+                                <select class="c-product__select" name="THICKNESS" id="c-thickness_1" disabled>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="hidden" name="WEIGHT">
+
+                        <div class="c-product__title">Введите известный вам параметр</div>
+                        <div class="c-product__inputs clearfix">
+                            <div class="c-product__input-block">
+                                <label class="c-product__input-label" for="c-count_1">Листов</label>
+                                <input type="text" class="c-product__input" name="count" id="c-count_1" disabled>
+                            </div>
+                            <div class="c-product__input-block">
+                                <label class="c-product__input-label" for="c-m2_1">м<sup>2</sup></label>
+                                <input type="text" class="c-product__input" name="m2" id="c-m2_1" disabled>
+                            </div>
+                            <div class="c-product__input-block">
+                                <label class="c-product__input-label" for="c-m3_1">м<sup>3</sup></label>
+                                <input type="text" class="c-product__input" name="m3" id="c-m3_1" disabled>
+                            </div>
+                            <div class="c-product__input-block">
+                                <label class="c-product__input-label" for="c-weight_1">Вес (кг)</label>
+                                <input type="text" class="c-product__input" name="weight" id="c-weight_1" disabled>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="calc__button">
+                    <a class="button button_black button_calc" onclick="addCalcProduct(2)" id="button_more_calc">Добавить
+                        еще один товар</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__body">
+        <form class="form form_simple form_calc_full">
+            <div class="form__subtitle" style="margin: -14px 0 20px;">Заполните форму и наши специалисты сообщат
+                стоимость и ответят на все ваши вопросы
+            </div>
+            <div class="form__sides">
+                <div class="form__left">
+                    <div class="form__row">
+                        <label for="calc__name">Ваше имя*</label>
+                        <input type="text" id="calc__name" required>
+                    </div>
+                    <div class="form__row">
+                        <label for="calc__phone">Телефон*</label>
+                        <input type="text" id="calc__phone" required data-inputmask="'mask': '+7 (999) 999-99-99'">
+                    </div>
+                    <!-- <div class="form__row">
+                        <label for="calc__email">Email*</label>
+                        <input type="text" id="calc__email" required>
+                    </div> -->
+                    <div class="form__warning">
+                        <span>*</span>
+                        Необходимые поля для заполнения
+                    </div>
+                </div>
+                <div class="form__right">
+                    <div class="form__row">
+                        <label for="calc__address">Адрес доставки</label>
+                        <textarea id="calc__address" placeholder="При самовывозе не заполняется"></textarea>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" id="calc__fanera" value="">
+            <input type="hidden" id="calc__material" value="">
+
+            <div class="form__submit">
+                <input type="submit" value="Отправить" class="button">
+            </div>
+            <div class="form__warning" align="center">Конфиденциальность переданных вами данных <b>гарантирована</b>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="popup_calc_simple" class="popup" style="display: none; width: 830px;">
+    <div class="popup__body popup__body_calc" style="padding: 25px 75px">
+        <div class="popup__title">Уточнить стоимость</div>
+    </div>
+    <div class="popup__body">
+        <form class="form form_simple form_calc_simple">
+            <div class="form__subtitle" style="margin: -14px 0 20px;">Заполните форму и наши специалисты сообщат
+                стоимость и ответят на все вопросы.
+            </div>
+            <div class="form__sides">
+                <div class="form__left">
+                    <div class="form__row">
+                        <label for="calc__name">Ваше имя*</label>
+                        <input type="text" id="calc_simple__name" required>
+                    </div>
+                    <div class="form__row">
+                        <label for="calc__phone">Телефон*</label>
+                        <input type="text" id="calc_simple__phone" required
+                               data-inputmask="'mask': '+7 (999) 999-99-99'">
+                    </div>
+                    <!-- <div class="form__row">
+                        <label for="calc__email">Email*</label>
+                        <input type="text" id="calc__email" required>
+                    </div> -->
+                    <div class="form__warning">
+                        <span>*</span>
+                        Необходимые поля для заполнения
+                    </div>
+                </div>
+                <div class="form__right">
+                    <div class="form__row">
+                        <label for="calc__address">Параметры для расчета / Ваш вопрос</label>
+                        <textarea id="calc_simple__address"
+                                  placeholder="Продукция, количество и адрес доставки* *при самовывозе адрес не писать"></textarea>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" id="calc_simple__fanera" value="">
+            <input type="hidden" id="calc_simple__material" value="">
+            <input type="hidden" id="calc_simple__ismod" value="">
+
+            <div class="form__submit">
+                <input type="submit" value="Отправить" class="button">
+            </div>
+            <div class="form__warning" align="center">Конфиденциальность переданных вами данных <b>гарантирована</b>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="/js/jquery-1.9.1.js?1435056977268381"></script>
+<script type="text/javascript" src="/js/flexslider-min.js?143505697722034"></script>
+<script type="text/javascript" src="/js/fancybox-min.js?143505697723135"></script>
+<script type="text/javascript" src="/js/jquery.inputmask.js?1435161088106861"></script>
+<script type="text/javascript" src="/js/filedownload.js?143558781819012"></script>
+<script type="text/javascript" src="/js/calc.js?143748267610447"></script>
+<script type="text/javascript" src="/js/common.js?143748669910264"></script>
+
+<!-- Массив калькулятора -->
+
+<script>
+    var calc = {
+        0: {
+            'MARKA': 'ФК',
+            'FORMAT_A': '1525',
+            'FORMAT_B': '1525',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '3',
+                1: '4',
+                2: '6',
+                3: '8',
+                4: '9',
+                5: '10',
+                6: '12',
+                7: '15',
+                8: '18',
+                9: '21',
+                10: '24',
+            },
+            'SORT': {
+                0: '4/4',
+                1: '3/4',
+                2: '2/4',
+                3: '2/3',
+                4: '2/2',
+                5: '1/2',
+            },
+        },
+        1: {
+            'MARKA': 'ФСФ',
+            'FORMAT_A': '1525',
+            'FORMAT_B': '3050',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '4',
+                1: '6.5',
+                2: '8',
+                3: '9',
+                4: '10',
+                5: '12',
+                6: '15',
+                7: '18',
+                8: '21',
+                9: '24',
+                10: '27',
+                11: '30',
+                12: '35',
+                13: '40',
+            },
+            'SORT': {
+                0: '4/4',
+                1: '3/4',
+                2: '2/4',
+                3: '2/3',
+                4: '2/2',
+                5: '1/2',
+            },
+        },
+        2: {
+            'MARKA': 'ФСФ',
+            'FORMAT_A': '1500',
+            'FORMAT_B': '3000',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '4',
+                1: '6.5',
+                2: '8',
+                3: '9',
+                4: '10',
+                5: '12',
+                6: '15',
+                7: '18',
+                8: '21',
+                9: '24',
+                10: '27',
+                11: '30',
+                12: '35',
+                13: '40',
+            },
+            'SORT': {
+                0: '4/4',
+                1: '3/4',
+                2: '2/4',
+                3: '2/3',
+                4: '2/2',
+                5: '1/2',
+            },
+        },
+        3: {
+            'MARKA': 'ФСФ',
+            'FORMAT_A': '2440',
+            'FORMAT_B': '1220',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '4',
+                1: '6',
+                2: '9',
+                3: '10',
+                4: '12',
+                5: '15',
+                6: '18',
+                7: '21',
+                8: '24',
+                9: '27',
+                10: '30',
+                11: '35',
+                12: '40',
+            },
+            'SORT': {
+                0: '4/4',
+                1: '3/4',
+                2: '2/4',
+                3: '2/3',
+                4: '2/2',
+                5: '1/2',
+            },
+        },
+        4: {
+            'MARKA': 'ФСФ',
+            'FORMAT_A': '2500',
+            'FORMAT_B': '1250',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '4',
+                1: '6',
+                2: '9',
+                3: '10',
+                4: '12',
+                5: '15',
+                6: '18',
+                7: '21',
+                8: '24',
+                9: '27',
+                10: '30',
+                11: '35',
+                12: '40',
+            },
+            'SORT': {
+                0: '4/4',
+                1: '3/4',
+                2: '2/4',
+                3: '2/2',
+                4: '1/2',
+            },
+        },
+        5: {
+            'MARKA': 'ФСФ Хвоя',
+            'FORMAT_A': '2440',
+            'FORMAT_B': '1200',
+            'WEIGHT': '600',
+            'THICKNESS': {
+                0: '6.5',
+                1: '9',
+                2: '12',
+                3: '15',
+                4: '18',
+                5: '21',
+                6: '24',
+                7: '27',
+                8: '30',
+            },
+            'SORT': {
+                0: '3/3',
+                1: '2/3',
+                2: '1/3',
+            },
+        },
+        6: {
+            'MARKA': 'ФСФ Ламинированная (Россия)',
+            'FORMAT_A': '1525',
+            'FORMAT_B': '3050',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '6',
+                1: '6.5',
+                2: '9',
+                3: '12',
+                4: '15',
+                5: '18',
+                6: '21',
+                7: '24',
+                8: '27',
+                9: '30',
+                10: '35',
+                11: '40',
+            },
+            'SORT': {
+                0: 'гладкая/гладкая (F1/F1)',
+                1: 'гладкая/сетка (F1/W1)',
+            },
+        },
+        7: {
+            'MARKA': 'ФСФ Ламинированная (Россия)',
+            'FORMAT_A': '1500',
+            'FORMAT_B': '3000',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '6',
+                1: '6.5',
+                2: '9',
+                3: '12',
+                4: '15',
+                5: '18',
+                6: '21',
+                7: '24',
+                8: '27',
+                9: '30',
+                10: '35',
+                11: '40',
+            },
+            'SORT': {
+                0: 'гладкая/гладкая (F1/F1)',
+                1: 'гладкая/сетка (F1/W1)',
+            },
+        },
+        8: {
+            'MARKA': 'ФСФ Ламинированная (Россия)',
+            'FORMAT_A': '2440',
+            'FORMAT_B': '1200',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '6',
+                1: '6.5',
+                2: '9',
+                3: '12',
+                4: '15',
+                5: '18',
+                6: '21',
+                7: '24',
+                8: '27',
+                9: '30',
+                10: '35',
+                11: '40',
+            },
+            'SORT': {
+                0: 'гладкая/гладкая (F1/F1)',
+                1: 'гладкая/сетка (F1/W1)',
+            },
+        },
+        9: {
+            'MARKA': 'ФСФ Ламинированная (Россия)',
+            'FORMAT_A': '2500',
+            'FORMAT_B': '1250',
+            'WEIGHT': '700',
+            'THICKNESS': {
+                0: '6',
+                1: '6.5',
+                2: '9',
+                3: '12',
+                4: '15',
+                5: '18',
+                6: '21',
+                7: '24',
+                8: '27',
+                9: '30',
+                10: '35',
+                11: '40',
+            },
+            'SORT': {
+                0: 'гладкая/гладкая (F1/F1)',
+                1: 'гладкая/сетка (F1/W1)',
+            },
+        },
+        10: {
+            'MARKA': 'ФСФ Ламинированная (Китай)',
+            'FORMAT_A': '2440',
+            'FORMAT_B': '1200',
+            'WEIGHT': '550',
+            'THICKNESS': {
+                0: '18',
+                1: '21',
+            },
+            'SORT': {
+                0: 'гладкая/гладкая (F1/F1)',
+            },
+        },
+        11: {
+            'MARKA': 'OSB',
+            'FORMAT_A': '2440',
+            'FORMAT_B': '1200',
+            'WEIGHT': '600',
+            'THICKNESS': {
+                0: '9',
+                1: '12',
+                2: '15',
+                3: '18',
+                4: '22',
+                5: '25',
+            },
+            'SORT': {
+                0: '1 (первый)',
+            },
+        },
+        12: {
+            'MARKA': 'ДВП',
+            'FORMAT_A': '2140',
+            'FORMAT_B': '1200',
+            'WEIGHT': '900',
+            'THICKNESS': {
+                0: '3.2',
+            },
+            'SORT': {
+                0: '1 (первый)',
+            },
+        },
+        13: {
+            'MARKA': 'ДВП',
+            'FORMAT_A': '2440',
+            'FORMAT_B': '1200',
+            'WEIGHT': '900',
+            'THICKNESS': {
+                0: '3.2',
+            },
+            'SORT': {
+                0: '1 (первый)',
+            },
+        },
+        14: {
+            'MARKA': 'ДВП',
+            'FORMAT_A': '2745',
+            'FORMAT_B': '1220',
+            'WEIGHT': '900',
+            'THICKNESS': {
+                0: '3.2',
+            },
+            'SORT': {
+                0: '1 (первый)',
+            },
+        },
+        15: {
+            'MARKA': 'ДСП',
+            'FORMAT_A': '2500',
+            'FORMAT_B': '1850',
+            'WEIGHT': '650',
+            'THICKNESS': {
+                0: '16',
+            },
+            'SORT': {
+                0: '1 (первый)',
+            },
+        },
+        16: {
+            'MARKA': 'ДСП',
+            'FORMAT_A': '2440',
+            'FORMAT_B': '1830',
+            'WEIGHT': '650',
+            'THICKNESS': {
+                0: '16',
+            },
+            'SORT': {
+                0: '1 (первый)',
+            },
+        },
+    };
+    // console.log('марка: '+calc[0].MARKA);
+    // console.log('формат [A]: '+calc[0].FORMAT_A);
+    // console.log('формат [B]: '+calc[0].FORMAT_B);
+    // console.log('вес: '+calc[0].WEIGHT);
+    // console.log('толщина [0]: '+calc[0].THICKNESS[0]);
+    // console.log('сорт [0]: '+calc[0].SORT[0]);
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter31059511 = new Ya.Metrika({
+                id: 31059511,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+        } catch (e) {
+        }
+    });
+    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        n.parentNode.insertBefore(s, n);
+    };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})(document, window, "yandex_metrika_callbacks");</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/31059511" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript><!-- /Yandex.Metrika counter -->        <!-- Google Analitics counter -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-64427627-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!-- Google Analitics counter --><!-- Callbaska -->
+<script src="https://my.callbaska.ru/callback.js" async type="text/javascript" charset="utf-8"></script>
+<!-- Callbaska -->
+</body>
+</html>
