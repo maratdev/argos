@@ -1,6 +1,6 @@
 var gulp           = require('gulp'),
 		gutil          = require('gulp-util' ),
-		sass           = require('gulp-sass'),
+		scss           = require('gulp-sass'),
 		browserSync    = require('browser-sync'),
 		concat         = require('gulp-concat'),
 		uglify         = require('gulp-uglify'),
@@ -18,8 +18,8 @@ var gulp           = require('gulp'),
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/youtube/jquery.tubular.1.0.js',
-		'app/js/common.js', // Всегда в конце
+		'app/libs/bigvideo/jquery.tubular.1.0.js',
+		'app/js/common.js',// Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify())
@@ -29,18 +29,14 @@ gulp.task('scripts', function() {
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		server: {
-			baseDir: 'app'
-		},
-		notify: false,
-		// tunnel: true,
-		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
+		proxy:"argos2.loc/app/",
+		notify: false
 	});
 });
 
-gulp.task('sass', function() {
-	return gulp.src('app/sass/**/*.sass')
-	.pipe(sass({
+gulp.task('scss', function() {
+	return gulp.src('app/sass/**/*.scss')
+	.pipe(scss({
 		includePaths: bourbon.includePaths
 	}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
@@ -50,8 +46,8 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('watch', ['sass', 'scripts', 'browser-sync'], function() {
-	gulp.watch('app/sass/**/*.sass', ['sass']);
+gulp.task('watch', ['scss', 'scripts', 'browser-sync'], function() {
+	gulp.watch('app/sass/**/*.scss', ['scss']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
@@ -62,7 +58,7 @@ gulp.task('imagemin', function() {
 	.pipe(gulp.dest('dist/img')); 
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function() {
+gulp.task('build', ['removedist', 'imagemin', 'scss', 'scripts'], function() {
 
 	var buildFiles = gulp.src([
 		'app/*.html',
