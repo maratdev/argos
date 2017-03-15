@@ -2,101 +2,69 @@ $output-bourbon-deprecation-warnings: false;
 @import "bourbon";
 @import "vars";
 @import "libs";
-@import "vars";
+@import "fonts";
 
-*::-webkit-input-placeholder{
-  color: #666;
-  opacity: 1;
+
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-
-*:-moz-placeholder{
-  color: #666;
-  opacity: 1;
+section {
+  padding: 10em 0;
 }
 
-
-*::-moz-placeholder{
-  color: #666;
-  opacity: 1;
+header {
+  font-size: em(72px);
+  width: 100%;
+  overflow: hidden;
 }
 
-
-*:-ms-input-placeholder{
-  color: #666;
-  opacity: 1;
+.header__video > video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid{
-  color: #666;
-}
-
-body input:required:valid,
-body textarea:required:valid{
-  color: #666;
-}
-
-body{
-  font-size: 16px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.75;
-  font-family: $default-font;
-  overflow-x: hidden;
-}
-
-/* Хедер */
-header{
-  position: relative;
-
-
-
-
-  .header_overlay{
-    background: url(../img/bgvideo.jpg) no-repeat center ;
-    background: #fff;
-    background-size: cover;
-    display: block;
-    width: 100%;
-    max-height: 876px;
-  }
-
-  .header__video {
-    overflow: hidden;
-    .clippedElement {
-      -webkit-clip-path: url(#cclipp);
-      -moz-clip-path: url(#cclipp);
-      clip-path: url(#cclipp);
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      min-width: 100%;
-      min-height: 100%;
-     // -webkit-filter: blur(15px);
-     // filter: blur(15px);
-    }
-  }
-
-  .header__video > video {
-    position: relative;
-    background-color: #fff;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+svg {
+  font-weight: 800;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  text{
+    font-family: $default-font-li-i;
   }
 }
 
+svg mask rect {
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+svg > rect {
+  fill: white;
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.no-svg-header {
+  display: none;
+}
+
+section{
+  height: 1000px;
+}
 
 
-@media (min-aspect-ratio: 16/9) {
-  .header__video > video { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .header__video > video { width: 300%; left: -100%; }
-}
 /* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
 @supports (object-fit: cover) {
   .header__video > video {
@@ -109,11 +77,13 @@ header{
   .header_overlay {
     background: url('../img/bgvideo.jpg') center center / cover no-repeat;
   }
-
   .header__video > video {
     display: none;
   }
+
 }
+
+
 
 
 
