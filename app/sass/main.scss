@@ -35,7 +35,7 @@ $output-bourbon-deprecation-warnings: false;
       font-family: $default-font-li-i;
       font-size:em(20px);
       color: $gray;
-      margin-left: 200px;
+      margin-left: 94px;
 
     }
     p{
@@ -47,8 +47,8 @@ $output-bourbon-deprecation-warnings: false;
         content:'';
         position: absolute;
         height: 1px;
-        top:50%;
-        left: 110px;
+        right: 73px;
+        bottom: 8px;
       }
     }
 
@@ -62,14 +62,15 @@ $output-bourbon-deprecation-warnings: false;
     top: 0;
     width: 100%;
     svg {
-      font-weight : 800;
+      mask{
+        overflow: hidden;
+      }
       width       : 100%;
       height      : 100%;
       position    : absolute;
-
       text {
-        font-family : $default-font-li-i;
-        font-size   : em(72px);
+        font-family : $default-font-intro;
+        font-size   : em(58px);
 
       }
     }
