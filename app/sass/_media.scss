@@ -1,6 +1,25 @@
 @import "bourbon";
 @import "vars";
 
+//Отдельные настройки видео в хедере
+/* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
+@supports (object-fit: cover) {
+  .header_video > video {
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .header_overlay {
+    background: url('../img/bgvideo.jpg') center center / cover no-repeat;
+  }
+  .header_video > video {
+    display: none;
+  }
+
+}
+
 /*==========  Desktop First  ==========*/
 
 /*  Devices, Wide Screens */
@@ -72,5 +91,7 @@
 @media only screen and (min-width : 1200px){
   /**/
 }
+
+
 
 

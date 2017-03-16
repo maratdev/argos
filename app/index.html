@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Title</title>
+	<title>Аргос</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,29 +20,52 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
-<header class="svg-header max-height">
-	<svg>
-		РЕКЛАМНО ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ
-		<mask id="mask">
+<header class="header js-max-height">
+	<div class="header__logo col-lg-12">
+		<div class="container">
+			<div class="row">
+				<a href="/" class="logo">
+					<img class="logo__img" src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="Логотип Аргос" title="Логотип Аргос" >
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="header__text-adr col-lg-12">
+		<div class="container">
+			<div class="row">
+				<p class="hc_contacts">г. Махачкала, ул. Агасиева 5</p>
+			</div>
+		</div>
+	</div>
+	<div class="header__svg_header">
+		<svg>
+			<mask id="mask">
+				<rect width="100%" height="100%"/>
+				<text>
+					<tspan x="0" y="60%">РЕКЛАМНО</tspan>
+					<tspan x="0" dy="1em">ПРОИЗВОДСТВЕННАЯ</tspan>
+					<tspan x="0" dy="1em">КОМПАНИЯ</tspan>
+				</text>
+			</mask>
 			<rect width="100%" height="100%"/>
-			<text>
-				<tspan x="0" y="60%">РЕКЛАМНО</tspan>
-				<tspan x="0" dy="1em">ПРОИЗВОДСТВЕННАЯ</tspan>
-				<tspan x="0" dy="1em">КОМПАНИЯ</tspan>
-			</text>
-		</mask>
-		<rect width="100%" height="100%"/>
-	</svg>
-<div class="header__video header_overlay max-height">
-	<video id="video_target"  width="100%" height="auto" autoplay="autoplay" poster="img/bgvideo.jpg" loop="loop" preload="auto">
-		<source src="upload/video/bg.mp4" type="video/mp4">
-		<source src="upload/video/bg.webm" type="video/webm">
-	</video>
-</div>
+		</svg>
+		<div class="header_video header_overlay js-max-height">
+			<video id="video_target"  autoplay="autoplay" poster="img/bgvideo.jpg" loop="loop" preload="auto">
+				<source src="upload/video/bg.mp4" type="video/mp4">
+				<source src="upload/video/bg.webm" type="video/webm">
+			</video>
+		</div>
+	</div>
+
+</header>
+<header class="js-no-svg-header">
+	<h1>ESTEVAN MAITO</h1>
 </header>
 
 <section>
-
+	<div>
+<p>jgvfkdj</p>
+	</div>
 </section>
 
 

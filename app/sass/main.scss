@@ -1,87 +1,109 @@
 $output-bourbon-deprecation-warnings: false;
 @import "bourbon";
-@import "vars";
-@import "libs";
 @import "fonts";
+@import "base";
 
 
 
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
+
+// Хедер
+.header {
+  width: 100%;
+  position: relative;
+
+  // Хедер--> Логотип
+  .header__logo{
+    top:0;
+    z-index: 2;
+    width: 100%;
+    height: 127px;
+    @include outline(red);
+      .logo{
+        display:inline-block;
+        padding-top: 20px;
+      }
+  }
+
+  // Хедер--> Адрес
+  .header__text-adr{
+    @include outline(red);
+    z-index: 3;
+    height: 60px;
+
+    .hc_contacts{
+      padding: 38px 0 0 0;
+      font-family: $default-font-li-i;
+      font-size:em(20px);
+      color: $gray;
+      margin-left: 200px;
+
+    }
+    p{
+      display: block;
+      &::after{
+        background-color: $gray;
+        display: block;
+        width:230px;
+        content:'';
+        position: absolute;
+        height: 1px;
+        top:50%;
+        left: 110px;
+      }
+    }
+
+
+  }
+
+  // Хедер--> Svg
+  .header__svg_header{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    svg {
+      font-weight : 800;
+      width       : 100%;
+      height      : 100%;
+      position    : absolute;
+
+      text {
+        font-family : $default-font-li-i;
+        font-size   : em(72px);
+
+      }
+    }
+    svg mask rect {
+      fill: rgba(255, 255, 255, 0.9);
+    }
+    svg > rect {
+      fill         : white;
+      -webkit-mask : url(#mask);
+      mask         : url(#mask);
+    }
+
+    // Хедер--> Svg --> Видео
+    .header_video > video {
+      min-width  : 100%;
+      min-height : 100%;
+      width      : auto;
+      height     : auto;
+    }
+  }
+
+
+}
+
+header{
+  &.js-no-svg-header {
+    display : none;
+  }
 }
 
 section {
-  padding: 10em 0;
+  height : 1000px;
 }
 
-header {
-  font-size: em(72px);
-  width: 100%;
-  overflow: hidden;
-}
-
-.header__video > video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-svg {
-  font-weight: 800;
-  width: 100%;
-  height: 100%;
-  position:absolute;
-  text{
-    font-family: $default-font-li-i;
-  }
-}
-
-svg mask rect {
-  fill: rgba(255, 255, 255, 0.9);
-}
-
-svg > rect {
-  fill: white;
-  -webkit-mask: url(#mask);
-  mask: url(#mask);
-}
-
-video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.no-svg-header {
-  display: none;
-}
-
-section{
-  height: 1000px;
-}
-
-
-/* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
-@supports (object-fit: cover) {
-  .header__video > video {
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-  }
-}
-@media (max-width: 767px) {
-  .header_overlay {
-    background: url('../img/bgvideo.jpg') center center / cover no-repeat;
-  }
-  .header__video > video {
-    display: none;
-  }
-
-}
 
 
 
@@ -90,3 +112,4 @@ section{
 
 //Load Libs SCSS
 @import "media";
+@import "libs";

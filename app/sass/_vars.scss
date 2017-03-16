@@ -1,8 +1,12 @@
 @import "bourbon";
 
-$default-font-li-i: 'Ubuntulii', sans-serif;
-$default-font-reg: 'Ubuntureg', sans-serif;
-$default-font-li: 'Ubuntuli', sans-serif;
+@mixin outline($color){
+  outline:0px solid $color ;
+}
+
+$default-font-li-i: 'Ubuntulii', Helvetica,Arial sans-serif;
+$default-font-reg: 'Ubuntureg', Helvetica,Arial sans-serif;
+$default-font-li: 'Ubuntuli', Helvetica,Arial sans-serif;
 
 $accent: #141414;
 $gray: #7a797e;

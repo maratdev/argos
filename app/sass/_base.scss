@@ -35,13 +35,16 @@ body textarea:required:valid{
 	color: #666;
 }
 
+p, h1, h2, h3{
+	margin: 0;
+}
 
 body{
-	font-size: 16px;
+	font-size:14px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.6;
-	font-family: $default-font;
+	line-height:1.42857143;
+	font-family: $default-font-reg;
 	overflow-x: hidden;
 }
 
