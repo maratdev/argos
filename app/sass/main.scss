@@ -45,15 +45,16 @@ $output-bourbon-deprecation-warnings: false;
         display: block;
         width:230px;
         content:'';
-        position: absolute;
+        position:relative;
         height: 1px;
-        right: 73px;
-        bottom: 8px;
+        left:268px;
+        bottom:13px;
       }
     }
 
-
   }
+
+
 
   // Хедер--> Svg
   .header__svg_header{
@@ -62,25 +63,27 @@ $output-bourbon-deprecation-warnings: false;
     top: 0;
     width: 100%;
     svg {
-      mask{
-        overflow: hidden;
-      }
       width       : 100%;
       height      : 100%;
       position    : absolute;
+
       text {
         font-family : $default-font-intro;
-        font-size   : em(58px);
-
+        font-size   : em(52.8px);
       }
-    }
-    svg mask rect {
-      fill: rgba(255, 255, 255, 0.9);
-    }
-    svg > rect {
-      fill         : white;
-      -webkit-mask : url(#mask);
-      mask         : url(#mask);
+      mask{
+        rect {
+          fill: rgba(255, 255, 255, 0.9);
+        }
+      }
+
+      > rect {
+        fill         : white;
+        -webkit-mask : url(#mask);
+        mask         : url(#mask);
+      }
+      @-moz-document url-prefix(http://localhost:3000/app/)
+      { text{text-anchor:middle;}}
     }
 
     // Хедер--> Svg --> Видео
