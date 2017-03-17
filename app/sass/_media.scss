@@ -31,7 +31,25 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
-  /**/
+  .header__svg_header{
+    svg{
+      text {
+        font-size : em(42.8px) !important;
+      }
+    }
+  }
+  .header__slogan{
+    .hc_slogan{
+      left: 90px;
+      right: inherit;
+    }
+  }
+  .header__button-cont{
+    .button{
+      left: 90px;
+
+    }
+  }
 }
 
 
@@ -45,7 +63,68 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px){
-  /**/
+  .header__logo{
+    height: em(85px) !important;
+    .logo{
+      padding-top:7px !important;
+    }
+    a{
+      width: 100%;
+    }
+    img{
+      max-width: 25% !important;
+      margin: 0 auto;
+    }
+  }
+  .header__svg_header{
+    svg{
+      text {
+        font-size : em(27px) !important;
+      }
+    }
+  }
+  .header__text-adr{
+    .hc_text-adr{
+      margin-left: 0 !important;
+      padding:0 0 0 15px !important;
+    }
+  }
+  .header__slogan{
+    min-height: em(240px) !important;
+    .hc_slogan{
+      left:58px;
+    }
+  }
+  .header__button-cont{
+    min-height: em(30px) !important;
+    .button{
+      left:75px;
+      bottom:0 !important;
+      a{
+        font-size: em(15px) !important;
+        padding: 5px 41px !important;
+        border: 2px solid $gray;
+        border-radius:3px;
+        color: $accent;
+        text-decoration: none;
+      }
+      .button-txt{
+        &::after{
+          left: em(183px) !important;
+        }
+      }
+    }
+  }
+  .header__social{
+    .social_link{
+      margin-top:15px !important;
+      text-align: center !important;
+      a{
+        font-size: em(12px) !important;
+
+      }
+    }
+  }
 }
 
 

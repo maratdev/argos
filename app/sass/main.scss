@@ -8,38 +8,41 @@ $output-bourbon-deprecation-warnings: false;
 
 // Хедер
 .header {
+  height: auto;
   width: 100%;
   position: relative;
 
   // Хедер--> Логотип
   .header__logo{
-    top:0;
-    z-index: 2;
     width: 100%;
-    height: 127px;
+    height: em(127px);
     @include outline(red);
       .logo{
         display:inline-block;
         padding-top: 20px;
+        img{
+          max-width: 100%;
+          display: block;
+        }
       }
   }
 
   // Хедер--> Адрес
   .header__text-adr{
+    overflow: hidden;
     @include outline(red);
-    z-index: 3;
-    height: 60px;
+    min-height: em(60px);
 
-    .hc_contacts{
-      padding: 38px 0 0 0;
+    p{
       font-family: $default-font-li-i;
       font-size:em(20px);
       color: $gray;
-      margin-left: 94px;
-
-    }
-    p{
       display: block;
+    }
+
+    .hc_text-adr{
+      margin-left: em(94px);
+      padding: 38px 0 0 0;
       &::after{
         background-color: $gray;
         display: block;
@@ -47,19 +50,137 @@ $output-bourbon-deprecation-warnings: false;
         content:'';
         position:relative;
         height: 1px;
-        left:268px;
+        left:em(215px);
         bottom:13px;
       }
     }
 
   }
 
+  // Хедер--> Слоган
+.header__slogan{
+  position: relative;
+  padding: 0;
+  clear: both;
+  min-height: em(400px);
+  @include outline(red);
+  p{
+    font-family: $default-font-li;
+    font-size:em(20px);
+    color: $gray;
+    display: block;
+  }
+  .hc_slogan{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    &::before{
+      display: block;
+      content:'';
+      width: 30px;
+      margin-bottom: -15px;
+      margin-left:-50px;
+      height: 1px;
+      background-color: $gray;
+    }
+  }
+}
+  // Хедер--> Кнопка
+  .header__button-cont{
+   min-height: em(166px);
+    @include outline(red);
+    clear: both;
+    .button{
+      position: absolute;
+      bottom: 50px;
+      right: 17px;
 
+      a{
+        font:em(20px) $default-font-reg;
+        padding: 8px 51px;
+        border: 2px solid $gray;
+        border-radius:3px;
+        color: $accent;
+        text-decoration: none;
+      }
+
+
+      .button-txt{
+        // Хедер--> Кнопка--> Стрелка
+        &::after{
+          left: em(174px);
+          top: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(102, 102, 102, 0);
+          border-left-color: $gray;
+          border-width:4px;
+          margin-top: -4px;
+        }
+
+        &::before{
+          position: absolute;
+          top: 50%;
+          left: em(138px);
+          display: block;
+          content:'';
+          width: 46px;
+          height: 1px;
+          background-color: $gray;
+        }
+        &:hover{
+          &::after{
+            border-left-color: $blue;
+            @include mt(0.8s) ;
+          }
+          &::before{
+            background-color:$blue;
+            @include mt(0.8s) ;
+          }
+        }
+      }
+    }
+  }
+
+  // Хедер--> Соц.сети
+  .header__social{
+    min-height: 54px;
+    @include outline(red);
+    clear: both;
+    padding:0;
+    .social_link{
+      margin-top:36px;
+      padding-right:30px;
+      text-align: right;
+      overflow: hidden;
+      height: 18px;
+      width: 100%;
+      @include outline(red);
+      a{
+        color:$accent ;
+        font: em(16px) $default-font-li;
+      }
+      .item_link{
+        padding-left: 15px;
+      }
+
+      .item_link:hover i{
+        @include mt(0.8s) ;
+        color: $blue;
+      }
+    }
+
+  }
 
   // Хедер--> Svg
   .header__svg_header{
     overflow: hidden;
     position: absolute;
+    z-index: -9999;
     top: 0;
     width: 100%;
     svg {
@@ -82,8 +203,7 @@ $output-bourbon-deprecation-warnings: false;
         -webkit-mask : url(#mask);
         mask         : url(#mask);
       }
-      @-moz-document url-prefix(http://localhost:3000/app/)
-      { text{text-anchor:middle;}}
+
     }
 
     // Хедер--> Svg --> Видео

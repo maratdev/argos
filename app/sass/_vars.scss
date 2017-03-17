@@ -1,7 +1,11 @@
 @import "bourbon";
 
 @mixin outline($color){
-  outline:0px solid $color ;
+  outline:0 solid $color ;
+}
+
+@mixin mt($time){
+  transition: all $time ease;
 }
 
 $default-font-li-i: 'Ubuntulii', Helvetica,Arial sans-serif;
