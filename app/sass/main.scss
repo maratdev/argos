@@ -3,7 +3,11 @@ $output-bourbon-deprecation-warnings: false;
 @import "fonts";
 @import "base";
 
-
+img{
+  max-width: 100%;
+  display: block;
+  border: none;
+}
 
 
 // Хедер
@@ -20,10 +24,6 @@ $output-bourbon-deprecation-warnings: false;
       .logo{
         display:inline-block;
         padding-top: 20px;
-        img{
-          max-width: 100%;
-          display: block;
-        }
       }
   }
 
@@ -217,15 +217,140 @@ $output-bourbon-deprecation-warnings: false;
 
 
 }
-
 header{
   &.js-no-svg-header {
     display : none;
   }
 }
+// Услуги
 
-section {
-  height : 1000px;
+.service {
+  min-height : 1081px;
+
+  // Услуги--> Черный блок
+  .service__block{
+    @include outline(red);
+    box-shadow: 0.144em 2.681em 4.75em 0.25em rgba(1, 1, 1, 0.4);
+    border-radius: 30px;
+    margin: -65px auto 0;
+    width: 89%;
+    min-height: em(900px);
+    background-color: $accent;
+    position: relative;
+
+
+    .service__block_wrapper{
+      @include outline(red);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 91.2%;
+      height: 54.4%;
+      min-height: 55%;
+      margin: auto;
+
+      .item{
+        @include outline(red);
+        height: 247.9px;
+        &:nth-child(1){
+         border-bottom :1px solid $gray;
+         }
+        &:nth-child(2){
+          border-bottom :1px solid $gray;
+          border-left :1px solid $gray;
+          border-right :1px solid $gray;
+        }
+        &:nth-child(3){
+          border-bottom :1px solid $gray;
+        }
+        &:nth-child(5){
+          border-left :1px solid $gray;
+          border-right :1px solid $gray;
+        }
+        &:nth-child(n+4){
+        padding-top: 88px;
+        }
+        img{
+          margin: 0 auto;
+          fill: $blue;
+        }
+        p{
+          text-align: center;
+          color:#fff;
+          font: em(20px) $default-font-li;
+        }
+        .service_txt{
+          margin-top: 42px;
+        }
+      }
+
+    }
+
+    .service__button{
+      @include outline(red);
+      overflow: hidden;
+      width: 100%;
+      height: 62px;
+      position: absolute;
+      clear: both;
+      bottom: 28px;
+      .button{
+        text-align: center;
+        margin:30px auto;
+        a{
+          font:em(20px) $default-font-reg;
+          padding: 8px 51px;
+          border-radius:3px;
+          color: $accent;
+          text-decoration: none;
+          background-color: #fff;
+
+        }
+
+        .button-txt{
+          // Хедер--> Кнопка--> Стрелка
+          position: relative;
+          &::after{
+            bottom: em(43px);
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #fff;
+            border-width:4px;
+            margin-left: -4px;
+          }
+
+          &::before{
+            position: absolute;
+            bottom: em(31px);
+            left:50%;
+            display: block;
+            content:'';
+            width: 1px;
+            height: 15px;
+            background-color: #fff;
+          }
+          &:hover{
+            &::after{
+              border-bottom-color: $blue;
+              @include mt(0.8s) ;
+            }
+            &::before{
+              background-color:$blue;
+              @include mt(0.8s) ;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
