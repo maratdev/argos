@@ -38,6 +38,10 @@ body textarea:required:valid{
 p, h1, h2, h3{
 	margin: 0;
 }
+h2{
+	font:3.75em $default-font-intro;
+	color: $accent;
+}
 
 body{
 	font-size:16px;

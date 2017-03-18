@@ -1,7 +1,7 @@
 @import "bourbon";
 
 @mixin outline($color){
-  outline:0 solid $color ;
+  outline:1px solid $color ;
 }
 
 @mixin mt($time){

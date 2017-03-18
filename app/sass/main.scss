@@ -222,10 +222,26 @@ header{
     display : none;
   }
 }
-// Услуги
 
+// Услуги
 .service {
+  height: auto;
   min-height : 1081px;
+  position: relative;
+
+  .service__title{
+    position: absolute;
+    @include outline(red);
+    transform: rotate( -90deg );
+    left:0;
+    top: 50%;
+    width: 7%;
+    height: 5%;
+  }
+
+  h2{
+    text-align: center;
+  }
 
   // Услуги--> Черный блок
   .service__block{
@@ -233,7 +249,7 @@ header{
     box-shadow: 0.144em 2.681em 4.75em 0.25em rgba(1, 1, 1, 0.4);
     border-radius: 30px;
     margin: -65px auto 0;
-    width: 89%;
+    width: 86.95%;
     min-height: em(900px);
     background-color: $accent;
     position: relative;
@@ -250,7 +266,6 @@ header{
       height: 54.4%;
       min-height: 55%;
       margin: auto;
-
       .item{
         @include outline(red);
         height: 247.9px;
@@ -285,9 +300,7 @@ header{
           margin-top: 42px;
         }
       }
-
     }
-
     .service__button{
       @include outline(red);
       overflow: hidden;
@@ -353,9 +366,77 @@ header{
   }
 }
 
+.facts{
+  position: relative;
+  width: 100%;
+  min-height: 621px;
+  background: url("../img/facts-bg.jpg") no-repeat 100% 40%;
+  background-size: cover;
+  @include outline(red);
 
+  .facts__layer{
+    @include outline(red);
+    padding-top:82px ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 5%, rgba(255,255,255,0.05) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,0.05) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,0.05) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0dffffff',GradientType=0 );
 
+  }
 
+  .facts_block_wrapper{
+    .facts_item{
+      h3{
+        font:3.938em $default-font-intro ;
+        color: $blue;
+      }
+
+      .facts_item-title{
+        margin-left: 36px;
+        &::before{
+          position: absolute;
+          top:41px;
+          left:16px;
+          display: block;
+          content:'';
+          width:23px;
+          height: 1px;
+          background-color: $blue;
+        }
+      }
+    }
+  }
+
+  .facts__title{
+    position: absolute;
+    bottom: 43px;
+    left: 19%;
+    width: 1170px;
+    margin: 0 auto;
+    h2{
+      &::before{
+        position: absolute;
+        top:50%;
+        left:-47px;
+        display: block;
+        content:'';
+        width:31px;
+        height: 2px;
+        background-color: $accent;
+      }
+    }
+  }
+
+}
+
+.portfolio{
+  height: 300px;
+}
 
 
 
