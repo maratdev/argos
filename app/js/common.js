@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $('.js-focuspoint').focusPoint();
+
     //Header во весь экран
     function heightDetect(){
         $(".js-max-height").css("height", $(window).height());
@@ -15,4 +17,20 @@ $(document).ready(function(){
         document.querySelector('.header__svg_header').display = 'none';
         document.querySelector('.js-no-svg-header').display = 'block';
     }
+
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+// init Masonry
+    var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+    });
+
+
+
+
+
 });
+
+

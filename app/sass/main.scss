@@ -9,7 +9,6 @@ img{
   border: none;
 }
 
-
 // Хедер
 .header {
   height: auto;
@@ -21,10 +20,10 @@ img{
     width: 100%;
     height: em(127px);
     @include outline(red);
-      .logo{
-        display:inline-block;
-        padding-top: 20px;
-      }
+    .logo{
+      display:inline-block;
+      padding-top: 20px;
+    }
   }
 
   // Хедер--> Адрес
@@ -58,36 +57,36 @@ img{
   }
 
   // Хедер--> Слоган
-.header__slogan{
-  position: relative;
-  padding: 0;
-  clear: both;
-  min-height: em(400px);
-  @include outline(red);
-  p{
-    font-family: $default-font-li;
-    font-size:em(20px);
-    color: $gray;
-    display: block;
-  }
-  .hc_slogan{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    &::before{
+  .header__slogan{
+    position: relative;
+    padding: 0;
+    clear: both;
+    min-height: em(400px);
+    @include outline(red);
+    p{
+      font-family: $default-font-li;
+      font-size:em(20px);
+      color: $gray;
       display: block;
-      content:'';
-      width: 30px;
-      margin-bottom: -15px;
-      margin-left:-50px;
-      height: 1px;
-      background-color: $gray;
+    }
+    .hc_slogan{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      &::before{
+        display: block;
+        content:'';
+        width: 30px;
+        margin-bottom: -15px;
+        margin-left:-50px;
+        height: 1px;
+        background-color: $gray;
+      }
     }
   }
-}
   // Хедер--> Кнопка
   .header__button-cont{
-   min-height: em(166px);
+    min-height: em(166px);
     @include outline(red);
     clear: both;
     .button{
@@ -270,8 +269,8 @@ header{
         @include outline(red);
         height: 247.9px;
         &:nth-child(1){
-         border-bottom :1px solid $gray;
-         }
+          border-bottom :1px solid $gray;
+        }
         &:nth-child(2){
           border-bottom :1px solid $gray;
           border-left :1px solid $gray;
@@ -285,7 +284,7 @@ header{
           border-right :1px solid $gray;
         }
         &:nth-child(n+4){
-        padding-top: 88px;
+          padding-top: 88px;
         }
         img{
           margin: 0 auto;
@@ -431,11 +430,41 @@ header{
       }
     }
   }
-
 }
 
 .portfolio{
-  height: 300px;
+  .portfolio__wrapper{
+    @include outline(red);
+    margin-top: 148px;
+    height: auto;
+    .portfolio_buttons{
+      margin: 0 auto;
+      width: 80%;
+      height: 96px;
+      padding-top: 8px;
+      .button{
+        float: left;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        a{
+          font:em(20px) $default-font-reg;
+          padding: 8px 51px;
+          border-radius:3px;
+          color:#fff;
+          text-decoration: none;
+          background-color: $accent;
+        }
+        .button-txt{
+          &:hover{
+
+          }
+        }
+      }
+    }
+
+  }
 }
 
 

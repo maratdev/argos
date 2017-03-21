@@ -19,6 +19,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/detected/detect.js',
+		'app/libs/focuspoint/jquery.focuspoint.min.js',
 		'app/js/common.js',// Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -45,9 +46,14 @@ gulp.task('scss', function() {
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
+gulp.task('css', function() {
+	return gulp.src('app/libs/**/*.css')
+			.pipe(browserSync.reload({stream: true}));
+});
 
-gulp.task('watch', ['scss', 'scripts', 'browser-sync'], function() {
-	gulp.watch('app/sass/**/*.scss', ['scss']);
+gulp.task('watch', ['scss', 'scripts', 'css', 'browser-sync'], function() {
+	gulp.watch(['app/sass/**/*.scss', 'app/libs/**/*.scss'], ['scss']);
+	gulp.watch('app/libs/**/*.css', ['css']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
