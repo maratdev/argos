@@ -19,6 +19,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/detected/detect.js',
+		'app/libs/grid/mansory-gr.js',
 		'app/libs/focuspoint/jquery.focuspoint.min.js',
 		'app/js/common.js',// Всегда в конце
 		])

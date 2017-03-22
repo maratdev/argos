@@ -4,13 +4,10 @@
 /* ---- grid ---- */
 
 .grid {
-    background: #EEE;
     max-width: 1170px;
 }
-.grid-sizer,
-.grid-item {
-    width: 33.333%;
-}
+
+
 
 /* clearfix */
 .grid:after {
@@ -22,29 +19,21 @@
 /* ---- grid-item ---- */
 
 .grid-item {
-    position: relative;
-    width: 160px;
-    height: 120px;
+    width: 180px;
+    height: 140px;
     float: left;
-    background: #D26;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
-    overflow: hidden;
-    img {
+    background: $accent;
+    margin-bottom: 12px;
 
-        width:auto;
 
-        max-width:100%;
 
-        height:auto;
-
-    }
 }
+
 
 .grid-item--width2 { width: 320px; }
 .grid-item--width3 { width: 480px; }
 .grid-item--width4 { width: 640px; }
+.grid-item--width5 { min-width: 810px;}
 
 .grid-item--height2 { height: 200px; }
 .grid-item--height3 { height: 260px; }
