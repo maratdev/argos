@@ -3,5 +3,6 @@
 @include font-face("Ubuntulii", "../fonts/ubuntu/ubuntulightitalic", $file_formats: eot woff woff2 ttf svg);
 @include font-face("Ubuntureg", "../fonts/ubuntu/ubuntu", $file_formats: eot woff woff2 ttf svg);
 @include font-face("Ubuntuli", "../fonts/ubuntu/ubuntulight", $file_formats: eot woff woff2 ttf svg);
+@include font-face("fontello", "../fonts/fontello/fontello", $file-formats: eot woff woff2 ttf  svg );
 //Intro
 @include font-face("Intro", "../fonts/intro/intro", $file_formats: eot woff woff2 ttf svg);

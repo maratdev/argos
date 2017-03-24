@@ -19,7 +19,6 @@ img{
   .header__logo{
     width: 100%;
     height: em(127px);
-    @include outline(red);
     .logo{
       display:inline-block;
       padding-top: 20px;
@@ -29,8 +28,7 @@ img{
   // Хедер--> Адрес
   .header__text-adr{
     overflow: hidden;
-    @include outline(red);
-    min-height: em(60px);
+    min-height:6.8%;
 
     p{
       font-family: $default-font-li-i;
@@ -41,7 +39,7 @@ img{
 
     .hc_text-adr{
       margin-left: em(94px);
-      padding: 38px 0 0 0;
+      padding: 6% 0 0 0;
       &::after{
         background-color: $gray;
         display: block;
@@ -61,8 +59,7 @@ img{
     position: relative;
     padding: 0;
     clear: both;
-    min-height: em(400px);
-    @include outline(red);
+    min-height:43%;
     p{
       font-family: $default-font-li;
       font-size:em(20px);
@@ -86,8 +83,7 @@ img{
   }
   // Хедер--> Кнопка
   .header__button-cont{
-    min-height: em(166px);
-    @include outline(red);
+    min-height:17%;
     clear: both;
     .button{
       position: absolute;
@@ -148,7 +144,6 @@ img{
   // Хедер--> Соц.сети
   .header__social{
     min-height: 54px;
-    @include outline(red);
     clear: both;
     padding:0;
     .social_link{
@@ -158,7 +153,6 @@ img{
       overflow: hidden;
       height: 18px;
       width: 100%;
-      @include outline(red);
       a{
         color:$accent ;
         font: em(16px) $default-font-li;
@@ -225,12 +219,11 @@ header{
 // Услуги
 .service {
   height: auto;
-  min-height : 1081px;
   position: relative;
+  margin-bottom:11.9%;
 
   .service__title{
     position: absolute;
-    @include outline(red);
     transform: rotate( -90deg );
     left:0;
     top: 50%;
@@ -244,29 +237,23 @@ header{
 
   // Услуги--> Черный блок
   .service__block{
-    @include outline(red);
     box-shadow: 0.144em 2.681em 4.75em 0.25em rgba(1, 1, 1, 0.4);
     border-radius: 30px;
     margin: -65px auto 0;
     width: 86.95%;
-    min-height: em(900px);
+    min-height: 20%;
+    overflow: hidden;
     background-color: $accent;
     position: relative;
 
 
     .service__block_wrapper{
-      @include outline(red);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      padding-top:12%;
+      padding-bottom:6.8%;
+      overflow: hidden;
       width: 91.2%;
-      height: 54.4%;
-      min-height: 55%;
       margin: auto;
       .item{
-        @include outline(red);
         height: 247.9px;
         &:nth-child(1){
           border-bottom :1px solid $gray;
@@ -301,16 +288,12 @@ header{
       }
     }
     .service__button{
-      @include outline(red);
-      overflow: hidden;
       width: 100%;
       height: 62px;
-      position: absolute;
       clear: both;
-      bottom: 28px;
       .button{
         text-align: center;
-        margin:30px auto;
+        margin:32px auto;
         a{
           font:em(20px) $default-font-reg;
           padding: 8px 51px;
@@ -365,18 +348,18 @@ header{
   }
 }
 
+// Факты о нас
 .facts{
+  overflow: hidden;
   position: relative;
   width: 100%;
-  min-height: 621px;
+  height:auto;
   background: url("../img/facts-bg.jpg") no-repeat 100% 40%;
   background-size: cover;
-  @include outline(red);
 
   .facts__layer{
-    @include outline(red);
+    min-height: 621px;
     padding-top:82px ;
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -414,14 +397,13 @@ header{
   .facts__title{
     position: absolute;
     bottom: 43px;
-    left: 19%;
-    width: 1170px;
+    min-width: 100%;
     margin: 0 auto;
     h2{
       &::before{
         position: absolute;
         top:50%;
-        left:-47px;
+        margin-left: -41px;
         display: block;
         content:'';
         width:31px;
@@ -432,15 +414,19 @@ header{
   }
 }
 
+// Портфолио
+
 .portfolio{
+  overflow: hidden;
+  padding-bottom: 120px;
   .portfolio__wrapper{
-    @include outline(red);
     margin-top: 148px;
     height: auto;
     .portfolio_buttons{
+      overflow: hidden;
       margin: 0 auto;
       width: 80%;
-      height: 96px;
+      height: 20%;
       padding-top: 8px;
       .button{
         float: left;
@@ -458,17 +444,195 @@ header{
         }
         .button-txt{
           &:hover{
-
+            color: $blue;
+            @include mt(0.8s) ;
           }
+          &:active{
+            color: $blue;
+          }
+
         }
       }
 
     }
+    // Портфолио --> Сетка
+    .portfolio_grid{
+      .grid_readmore{
+        margin-top: 35px;
+        .button{
+          text-align: center;
+          margin-right: 10px;
+          margin-left: 20px;
+          margin-bottom: 25px;
+          a{
+            font:em(20px) $default-font-reg;
+            padding: 8px 51px;
+            border-radius:3px;
+            color:$accent;
+            text-decoration: none;
+            border: 1px solid $accent;
+          }
+          .button-txt{
+            &:hover{
+
+            }
+          }
+        }
+      }
+    }
 
   }
 }
+// Наши клиенты
+.clients{
+  position: relative;
+  background-color: $clients;
+  height: auto;
+  overflow: hidden;
+  padding-top: 31px;
+  padding-bottom: 127px;
+  .clients_txt{
+    position: absolute;
+    width: 230px;
+    height:225px ;
+    h2{
+      margin-top: 70px;
+      margin-left: 9px;
+      font: em(36px) $default-font-reg;
+    }
+  }
+  .clients_txt2{
+    margin-top: 13px;
+    float: right;
+    width: 230px;
+    height:225px ;
+    background-color: #fff;
+    h2{
+      margin-top:80px;
+      margin-left: 20px;
+      font: em(24px) $default-font-reg;
+      a{
+        color:#abafb7;
+        &:hover{
+          color: $blue;
+          text-decoration : none;
+          @include mt(.3s);
+        }
+      }
+    }
+  }
+  // Наши клиенты --> Карусель
+  .owl-carousel{
+    padding-left:236px;
+    width: 100%;
+    .owl-item{
+      height: 227px;
+      background-color: #fff;
+      img{
+        max-width: 75%;
+        margin:50px auto 0;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        &:hover {
+          -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+        }
+      }
+    }
 
+  }
+  // Наши клиенты --> Карусель нижняя
+  .owl-carousel2{
+    margin-top: 12px;
+    width: 80%;
+    .owl-item{
+      height: 227px;
+      background-color: #fff;
+      img{
+        max-width: 75%;
+        margin:50px auto 0;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        &:hover {
+          -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
 
+.contacts{
+  background-color: $clients;
+  height: 622px;
+  width: 100%;
+  .contacts__form{
+    padding-top:70px;
+    padding-left:8%;
+    height: auto;
+    min-height: em(620px);
+    border-radius: 0px 30px 0px 0px;
+    background-color: $accent;
+    h2{
+      color: #fff;
+    }
+    .form_city-number{
+      margin-top:25px;
+        * p{
+          color: #fff;
+          font-size:em(17px);
+          span{
+            color: $blue;
+          }
+        }
+
+    }
+    .form_input-soc{
+      margin-top:87px;
+      * p{
+        color: #fff;
+        font-size:em(17px);
+      }
+      .form_city{
+        input{
+          width: 100%;
+          padding-left: 10px;
+          border-radius: 3px;
+          background-color: transparent;
+          height:32px;
+          color:$blue;
+        }
+      }
+      .form_number{
+        a{
+          font-family: 'fontello', sans-serif;
+          font-size: em(25px);
+          color: #fff;
+          &:hover{
+            color: $blue;
+            @include mt(.3s);
+          }
+        }
+
+      }
+    }
+  }
+  .contacts__map{
+    background: url("../img/map.jpg") no-repeat center;
+    background-size: cover;
+    margin-top:70px;
+    height: 550px;
+  }
+}
+
+footer{
+
+  height: 300px;
+}
 
 //Load Libs SCSS
 @import "media";

@@ -1,11 +1,16 @@
 @import "app/libs/bootstrap-grid/bootstrap-grid";
 @import "app/libs/grid/grid";
 @import "app/libs/focuspoint/focuspoint";
-
-
-
+@import "app/libs/owl-carousel/css/owl.carousel.min";
+@import "app/libs/owl-carousel/css/owl.carousel";
+@import "app/libs/fontello/css/fontello-embedded";
+@import "app/libs/owl-carousel/css/owl.theme.default.min";
 /* Icon set - http://ionicons.com */
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+
+
 figure.snip1205 {
   float: left;
   overflow: hidden;
@@ -103,42 +108,7 @@ figure.snip1205.hover i {
 
 
 
-.element-in {
-  display:none;
-}
 
-.totop a {
-  display: none;
-}
-a, a:visited {
-  color: #33739E;
-  text-decoration: none;
-  display: block;
-  margin: 10px 0;
-}
-a:hover {
-  text-decoration: none;
-}
-#loadMore {
-  position: absolute;
-  bottom: 0;
-  padding: 10px;
-  text-align: center;
-  background-color: #33739E;
-  color: #fff;
-  border-width: 0 1px 1px 0;
-  border-style: solid;
-  border-color: #fff;
-  box-shadow: 0 1px 1px #ccc;
-  transition: all 600ms ease-in-out;
-  -webkit-transition: all 600ms ease-in-out;
-  -moz-transition: all 600ms ease-in-out;
-  -o-transition: all 600ms ease-in-out;
-}
-#loadMore:hover {
-  background-color: #fff;
-  color: #33739E;
-}
 
 
 

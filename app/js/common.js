@@ -34,36 +34,49 @@ $(document).ready(function(){
         }
     );
 
-
-
-});
-
-    $(".element-in").slice(0, 4).show();
-    $("#loadMore").on('click', function (e) {
-        e.preventDefault();
-        $("div:hidden").slice(0, 4).slideDown();
-        if ($("div:hidden").length == 0) {
-            $("#load").fadeOut('slow');
+    $(".owl-carousel").owlCarousel({
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        loop: true,
+        items:4,
+        margin:12,
+        autoWidth:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
         }
-        $('html,body').animate({
-            scrollTop: $(this).offset().top
-        }, 2000);
+    });
+    $(".owl-carousel2").owlCarousel({
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        loop: true,
+        items:4,
+        margin:12,
+        autoWidth:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
     });
 
 
-$('a[href=#top]').click(function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 1200);
-    return false;
 });
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 600) {
-        $('.totop a').fadeIn();
-    } else {
-        $('.totop a').fadeOut();
-    }
-});
 
 
