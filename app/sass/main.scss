@@ -233,6 +233,16 @@ header{
 
   h2{
     text-align: center;
+    &::before{
+      position: absolute;
+      top:70%;
+      margin-left: -41px;
+      display: block;
+      content:'';
+      width:31px;
+      height: 1px;
+      background-color: $accent;
+    }
   }
 
   // Услуги--> Черный блок
@@ -407,7 +417,7 @@ header{
         display: block;
         content:'';
         width:31px;
-        height: 2px;
+        height: 1px;
         background-color: $accent;
       }
     }
@@ -417,6 +427,29 @@ header{
 // Портфолио
 
 .portfolio{
+  position: relative;
+  .service__title{
+    position: absolute;
+    transform: rotate( -90deg );
+    left:0;
+    top: 50%;
+    width: 7%;
+    height: 5%;
+  }
+  h2{
+    text-align: center;
+    &::before{
+      position: absolute;
+      top:50%;
+      margin-left: -41px;
+      display: block;
+      content:'';
+      width:31px;
+      height: 1px;
+      background-color: $accent;
+    }
+  }
+
   overflow: hidden;
   padding-bottom: 120px;
   .portfolio__wrapper{
@@ -577,9 +610,21 @@ header{
     min-height: em(620px);
     border-radius: 0px 30px 0px 0px;
     background-color: $accent;
+
     h2{
-      color: #fff;
-    }
+        color: #fff;
+        &::before{
+          position: absolute;
+          margin-top: 5.5%;
+          margin-left: -41px;
+          display: block;
+          content:'';
+          width:31px;
+          height: 1px;
+          background-color:#fff;
+        }
+      }
+
     .form_city-number{
       margin-top:25px;
         * p{
@@ -632,6 +677,7 @@ header{
 footer{
 
   height: 300px;
+
 }
 
 //Load Libs SCSS

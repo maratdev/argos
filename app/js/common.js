@@ -1,15 +1,11 @@
 $(document).ready(function(){
 
+
+
     $('.js-focuspoint').focusPoint();
 
 
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 160,
-        isFitWidth: true,
-        gutter: 5,
-        transitionDuration: '0.8s'
-    });
+
 
     //Header во весь экран
     function heightDetect(){
@@ -21,6 +17,7 @@ $(document).ready(function(){
     });
 
 
+
     // Хедер--> Видео
     var hasMask = document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Mask", "1.0");
     if (!hasMask) {
@@ -28,11 +25,14 @@ $(document).ready(function(){
         document.querySelector('.js-no-svg-header').display = 'block';
     }
 
+
     $(".hover").mouseleave(
         function () {
             $(this).removeClass("hover");
         }
     );
+
+
 
     $(".owl-carousel").owlCarousel({
         autoplay:true,
@@ -76,7 +76,63 @@ $(document).ready(function(){
     });
 
 
+
+
+
+// init Isotope
+    var $grid2 = $('#grid2').isotope({
+        layoutMode: 'fitRows',
+        getSortData: {
+            name: '.name',
+            symbol: '.symbol',
+            number: '.number parseInt',
+            category: '[data-category]',
+        }
+    });
+
+// filter functions
+    var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+            var number = $(this).find('.number').text();
+            return parseInt( number, 10 ) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match( /ium$/ );
+        }
+    };
+
+// bind filter button click
+    $('#filters').on( 'click', '.button-txt', function() {
+        var filterValue = $( this ).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $grid2.isotope({ filter: filterValue });
+    });
+
+
+
+// change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', '.button-txt', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+        });
+    });
+
+
+
+
+
+
 });
+
+
+
+
 
 
 

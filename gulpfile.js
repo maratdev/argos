@@ -21,6 +21,7 @@ gulp.task('scripts', function() {
 		'app/libs/detected/detect.js',
 		'app/libs/grid/mansory-gr.js',
 		'app/libs/owl-carousel/owl.carousel.min.js',
+		'app/libs/isotope/isotope.pkgd.min.js',
 		'app/libs/focuspoint/jquery.focuspoint.min.js',
 		'app/js/common.js',// Всегда в конце
 		])
@@ -110,3 +111,4 @@ gulp.task('removedist', function() { return del.sync('dist'); });
 gulp.task('clearcache', function () { return cache.clearAll(); });
 
 gulp.task('default', ['watch']);
+

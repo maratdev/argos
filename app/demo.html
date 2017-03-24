@@ -3,43 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <title>Демо</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
+
 <body>
-<section class="clients">
+
+<section class="portfolio">
+    <h2 class="service__title">Портфолио</h2>
     <div class="container">
         <div class="row">
-            <div class="clients__carousel">
-                <div class="txt"><h2>Наши клиенты</h2></div>
-                <div class="owl-carousel">
-                    <div style="width:224px"><img src="img/portfolio/1.png" alt=""> </div>
-                    <div style="width:224px"> <img src="img/portfolio/1.png" alt=""> </div>
-                    <div style="width:224px"> <img src="img/portfolio/1.png" alt=""> </div>
-                    <div style="width:224px"> <img src="img/portfolio/1.png" alt=""> </div>
-                    <div style="width:224px"> <img src="img/portfolio/1.png" alt=""> </div>
-                    <div style="width:224px"> <img src="img/portfolio/1.png" alt=""> </div>
-                    <div style="width:224px"> <img src="img/portfolio/1.png" alt=""> </div>
+            <div class="portfolio__wrapper">
+                <div id="filters" class="portfolio_buttons">
+                    <div class="button">
+                        <a href="#" data-filter="*" class="button-txt">вывески</a>
+                    </div>
+                    <div class="button">
+                        <a href="#" data-filter=".metal" class="button-txt">3d муляжи</a>
+                    </div>
+                    <div class="button">
+                        <a href="#" data-filter=".transition" class="button-txt">освещение</a>
+                    </div>
+                    <div class="button">
+                        <a href="#" data-filter=".alkali" class="button-txt">резка</a>
+                    </div>
                 </div>
-                <div class="txt2"><h2>Наши клиенты</h2></div>
-                <div class="owl-carousel2">
-                    <div style="width:224px"> Your Content1 </div>
-                    <div style="width:224px"> Your Content2 </div>
-                    <div style="width:224px"> Your Content3 </div>
-                    <div style="width:224px"> Your Content4 </div>
-                    <div style="width:224px"> Your Content5 </div>
-                    <div style="width:224px"> Your Content6 </div>
-                    <div style="width:224px"> Your Content7 </div>
+                <div class="portfolio_grid">
+                    <div class="grid">
+                        <div id="grid2">
+                        <div class="js-focuspoint grid-item grid-item--width2 grid-item--height2 metal"
+                             data-category="metal" data-focus-x="0.5" data-focus-y="0.00" >
+                            <figure class="snip1205 navy ">
+                                <img  src="img/grid/1.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="js-focuspoint grid-item grid-item--width3 grid-item--height4 metal"
+                             data-focus-x="0.53" data-focus-y="-0.04" data-category="metal">
+                            <figure class="snip1205 navy ">
+                                <img src="img/grid/2.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="js-focuspoint grid-item grid-item--width2 grid-item--height2 metal"
+                             data-focus-x="0.50" data-focus-y="-0.08" data-category="metal">
+                            <figure class="snip1205 navy ">
+                                <img src="img/grid/3.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="js-focuspoint grid-item grid-item--width2 grid-item--height4 alkali"
+                             data-focus-x="-0.5" data-focus-y="0.00" data-category="alkali">
+                            <figure class="snip1205  ">
+                                <img  src="img/grid/4.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="js-focuspoint  grid-item grid-item--width3 grid-item--height2 alkali"
+                             data-focus-x="0.5" data-focus-y="0.00" data-category="alkali" >
+                            <figure class="snip1205 navy ">
+                                <img  src="img/grid/6.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="js-focuspoint  grid-item grid-item--width2 grid-item--height2 transition"
+                             data-focus-x="0.01" data-focus-y="0.34" data-category="transition" >
+                            <figure class="snip1205 navy ">
+                                <img  src="img/grid/7.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="js-focuspoint  grid-item grid-item--width2 grid-item--height3 transition"
+                             data-focus-x="-0.37" data-focus-y="0.07" data-category="transition" >
+                            <figure class="snip1205 navy ">
+                                <img  src="img/grid/5.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                        <div class="js-focuspoint  grid-item grid-item--width5 grid-item--height2 transition"
+                             data-focus-x="0.01" data-focus-y="0.14" data-category="transition">
+                            <figure class="snip1205 navy ">
+                                <img  src="img/grid/8.jpg" alt="">
+                                <i class="ion-search"></i>
+                                <a href="#"></a>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
-
+                    <div class="grid_readmore">
+                        <div class="button">
+                            <a href="#button-txt" class="button-txt">все работы</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 </section>
-<!-- Set up your HTML -->
-
 
 
 <link rel="stylesheet" href="css/main.min.css">
 <script src="js/scripts.min.js"></script>
+
+<script>
+    $(function() {
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: 160,
+            isFitWidth: true,
+            gutter: 5,
+            transitionDuration: '0.8s'
+        });
+    });
+</script>
 </body>
 </html>
