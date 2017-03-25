@@ -2,13 +2,268 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab18edb0-60ea-4dfa-877e-dffb77c91cc2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.eot@v=4.0.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.svg@v=4.0.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.ttf@v=4.0.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.woff@v=4.0.3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-bold-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-bold-webfont.eot@" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-bold-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-bold-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-bold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-light-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-light-webfont.eot@" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-light-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-light-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-regular-webfont.eot@" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/oswald-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/arrow-left.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/arrow-right.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/checkbox.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/holiday2016/snowflakes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/holiday2016/sweater.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/menu-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/northlich-logo-n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/northlich_tile/interesting_is_everything.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/northlich_tile/northlich_logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/northlich_tile/northlich_logo_airplane.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/slash.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/header.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/lib.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/TheLIFTAgency_White4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/BWR_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/CincyBallet_50thAnniversary_tile_tall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/CincyBell_tile_tall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/Colloquy_default.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/Dannon_MonstersU_tile_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/Formica_Envisualizer_tile_tall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/HoneyBaked_SummertimeBBQ_tile_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/Instawater.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/JBF_Scooter_BeCool_tile_tall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/JBF_Scooter_tile_big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/Jeffersons_Website_tile_big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/LoyaltyLeap_600x600.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/MarcosSpicyFresco_tile_tall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/MercyGetsMe_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/Norton_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/OLC_CashExplosion_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/OLC_ClassicLotto_tile_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/OLC_JustRight_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/ORG_ChallengeMe_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/ORG_MM_tile_tall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/ORG_ilostabet_tile_big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/OSU_VolumeBuilding_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/PG_Femcare_tile_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/STE_ExtraordinaryHeartCare_tile_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/WHBM_StyleTour_tile_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/WesternSouthern_FinancialTranslator_tile_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/YardHouse_GrandOpening_tile_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/Zucchini_Noodle_Homepage_image_600x600.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/grid/work/oh-wines-tile.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/AAF-Awards-2015_BlogPost.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Addys_BlogPost_image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Balcksmith_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Blacksmith_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Bryce1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Bryce2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Bryce3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/FacebookVideo_Article.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Frischs_blog_post.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Grapes_blog_Image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Kathy-blog_post.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Liz_blogpost.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Nathan_Engles_PressRelease_Image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Nathan_Engles_post_image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/NewHirePost_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/NewHirePost_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/NewHirePost_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/NewHirePost_Image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Northlich_LinkedIn_Page.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Retail_BlogPost_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/Retail_BlogPost_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/addys_2016.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/banslinger_joins_northlich.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/blacksmith_awards.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/blog_post_pizza_header.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/blog_post_pizza_image-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/blog_post_pizza_stats1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/blog_post_pizza_stats1b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/blog_post_pizza_stats2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/football_blog_post_image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/jbachman_joins_northlich.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/news_6-19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/news_6-9-2015.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/news_6-9-2015_instore.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/northlich-wins-12-creativity-awards.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/scooter-opens-the-kimono.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/tgarcia_joins_northlich.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/transparency_blogpost_image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/transparency_blogpost_image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/wendyxtwitter.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/youtube_blog_post_image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/youtube_blog_post_image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/youtube_blog_post_image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/news/youtube_blog_post_image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/DanR-people_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/Jill_A_1920x1080_V2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/KathySelker_16-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/Kerry-people_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/KurtAllen_16-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/Nicki_Zwissler_1920x1080.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/Sandy_Sullivan_article.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/Tawn_1920_1080.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/Tim_S_A_1920x1080.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/Todd_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/charlie_wide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/people/dwhitmyer_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/AHG/AHG_image_1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/AHG/AHG_image_2_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/AHG/AHG_image_3_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/AHG/AHG_image_4_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/AHG/AHG_image_5_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/AHG/AHG_image_6_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image1b_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image5b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BWR/Turning_Hunger_on_its_Head/BWR_image9b_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/BirdsEye/BirdsEye_image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Ballet/Poster_Campaign_2013-2014/CincinnatiBallet_logo_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Ballet/Poster_Campaign_2013-2014/CincyBallet_image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Ballet/Poster_Campaign_2013-2014/CincyBallet_image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Ballet/Poster_Campaign_2013-2014/CincyBallet_image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Bell/fioptics/CincyBell_Image1e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Bell/fioptics/CincyBell_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Bell/fioptics/CincyBell_Image4_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Cincinnati_Bell/fioptics/CincyBell_Image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Colloquy/COLLOQUY_Image2B.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Colloquy/Colloquylogo_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Dannon/monsters-university/NOR-MonstersU_image1_lg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Dannon/monsters-university/NOR-MonstersU_image3_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Dannon/monsters-university/NOR-MonstersU_image4_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Dannon/monsters-university/NOR-MonstersU_image5_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_3_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_5a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_5b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_5c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_5d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_5e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_5f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_6_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Formica/Envisualizer/FormicaEnvisualizer_image_7_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image5_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image6_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Image8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/HoneyBaked/Summertime_BBQ/HoneybakedBBQ_Logo_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/JBF/Ten/TenScooter_TenLogo_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/JBF/Ten/TenScooter_image_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/JBF/Ten/TenScooter_image_2a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/JBF/Ten/TenScooter_image_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/JBF/Ten/TenScooter_image_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/JBF/Ten/TenScooter_image_5_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Jeffersons_Bourbon/Website/JeffersonsBourbon_image_1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Jeffersons_Bourbon/Website/JeffersonsBourbon_image_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Jeffersons_Bourbon/Website/JeffersonsBourbon_image_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Jeffersons_Bourbon/Website/JeffersonsBourbon_image_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Jeffersons_Bourbon/Website/JeffersonsBourbon_image_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Jeffersons_Bourbon/Website/JeffersonsBourbon_image_6_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Long_John_Silvers/Brand_Relaunch/LongJohnSilvers_Browser_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Long_John_Silvers/Brand_Relaunch/LongJohnSilvers_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Long_John_Silvers/Brand_Relaunch/LongJohnSilvers_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Long_John_Silvers/Brand_Relaunch/LongJohnSilvers_LogoImage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Long_John_Silvers/Brand_Relaunch/LongJohnSilvers_LogoImage2_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/Rebrand/Marcos_Rebrand_image1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/Social/MarcosSocial_Image1b_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/Social/MarcosSocial_Image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/Social/MarcosSocial_Image7_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/SpicyFresco/Marcos_CS_image1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/SpicyFresco/Marcos_CS_image2_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/SpicyFresco/marcos_logo_lg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/MarcosPizza/SpicyFresco/marcos_logo_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Mercy_Health_Partners/Mercy_Gets_Me/Mercy_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Mercy_Health_Partners/Mercy_Gets_Me/Mercy_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Mercy_Health_Partners/Mercy_Gets_Me/Mercy_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Mercy_Health_Partners/Mercy_Gets_Me/Mercy_Image4_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Mercy_Health_Partners/Mercy_Gets_Me/Mercy_Image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Mercy_Health_Partners/Mercy_Gets_Me/Mercy_Image6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Norton_Healthcare/Between_Health_and_Life/Norton_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Norton_Healthcare/Between_Health_and_Life/Norton_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Norton_Healthcare/Between_Health_and_Life/Norton_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Norton_Healthcare/Between_Health_and_Life/Norton_Image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Norton_Healthcare/Between_Health_and_Life/Norton_Image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ORG/ORG_March_Madness/ORG_MM_image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ORG/ilostabet/ORG_image1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ORG/ilostabet/ORG_image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ORG/ilostabet/ORG_image4_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ORG/ilostabet/ORG_image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ORG/ilostabet/ORG_image6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ORG/ilostabet/ORG_image7_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/OSUWMC/Multi-media_Campaign/OSU_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/OSUWMC/Multi-media_Campaign/OSU_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/OSUWMC/Multi-media_Campaign/OSU_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/OSUWMC/Multi-media_Campaign/OSU_Image4_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Ohio_Lottery/cash_explosion/OLC_CashExplosion_image_2_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Ohio_Lottery/cash_explosion/OLC_CashExplosion_image_3_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Ohio_Lottery/classic_lotto/OLC_ClassicLotto_image_2_left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Ohio_Lottery/classic_lotto/OLC_ClassicLotto_image_2_right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Ohio_Lottery/just_right/OL_JustRight_Image2_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/PG/Femcare/pg_femcare_baby_animated_sm.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/PG/Femcare/pg_femcare_image_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/PG/Femcare/pg_femcare_image_2_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/PG/Femcare/pg_femcare_parallax_foreground_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/PG/Femcare/pg_femcare_skunk_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV/St_E_image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV/St_E_image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV_New/St-E__image_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV_New/St-E__image_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV_New/St-E__image_3_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV_New/St-E__image_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV_New/St-E__image_7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/HV_New/St-E__image_8_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/Healthy_Eating_Simplified/LIFT-Icon3_lg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/Healthy_Eating_Simplified/Zucchini_Noodle_halfcolumn_image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/StE/Healthy_Eating_Simplified/Zucchini_StELogo_md.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Western_Southern/Western_Southern/Western&amp;Southern_image0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Western_Southern/Western_Southern/WesternSouthern_image1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Western_Southern/Western_Southern/WesternSouthern_image2_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Western_Southern/Western_Southern/WesternSouthern_image3_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/White_Castle/Crave_Social/WhiteCastle_Image1_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/White_Castle/Crave_Social/WhiteCastle_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/White_Castle/Crave_Social/WhiteCastle_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/White_House_Black_Market/Pop-up_Shop/WHBM_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/White_House_Black_Market/Pop-up_Shop/WHBM_Image2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Yardhouse/Grand_Opening/YardHouse_Image1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Yardhouse/Grand_Opening/YardHouse_Image3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Yardhouse/Grand_Opening/YardHouse_Image4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/Yardhouse/Grand_Opening/YardHouse_Image5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/Forbesbyline1_v2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/cnbc-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/engaging.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/forbes-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/loyaltyleap1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/loyaltyleap2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/loyaltyleap3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/loyaltyone/usa-today-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/media/work/ohio-wines/oh-wines3.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/demo.html" afterPath="$PROJECT_DIR$/app/demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.js" afterPath="$PROJECT_DIR$/app/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.scss" afterPath="$PROJECT_DIR$/app/sass/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +349,7 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34228188">
+            <state vertical-scroll-proportion="-0.33559322">
               <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
               <folding />
             </state>
@@ -387,14 +642,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14354323" sideWeight="0.50431967" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14514408" sideWeight="0.51077944" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15101388" sideWeight="0.49028078" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -934,7 +1189,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34228188">
+        <state vertical-scroll-proportion="-0.33559322">
           <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
           <folding />
         </state>
