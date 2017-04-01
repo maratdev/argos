@@ -5,9 +5,12 @@
     <title>Демо</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 </head>
 
 <body>
+
+
 
 <section class="portfolio">
     <h2 class="service__title">Портфолио</h2>
@@ -15,88 +18,86 @@
         <div class="row">
             <div class="portfolio__wrapper">
                 <div id="filters" class="portfolio_buttons">
-                    <div class="button">
-                        <a href="#" data-filter="*" class="button-txt">вывески</a>
+                    <div class="button button-txt filter" data-filter="all">
+                        <a href="#filters">вывески</a>
                     </div>
-                    <div class="button">
-                        <a href="#" data-filter=".metal" class="button-txt">3d муляжи</a>
+                    <div class="button button-txt filter" data-filter=".blue">
+                        <a href="#filters">3d муляжи</a>
                     </div>
-                    <div class="button">
-                        <a href="#" data-filter=".transition" class="button-txt">освещение</a>
+                    <div class="button button-txt filter" data-filter=".orange">
+                        <a href="#filters">освещение</a>
                     </div>
-                    <div class="button">
-                        <a href="#" data-filter=".alkali" class="button-txt">резка</a>
+                    <div class="button button-txt filter" data-filter=".red">
+                        <a href="#filters">резка</a>
                     </div>
                 </div>
                 <div class="portfolio_grid">
-                    <div class="grid">
-                        <div id="grid2">
-                        <div class="js-focuspoint grid-item grid-item--width2 grid-item--height2 metal"
-                             data-category="metal" data-focus-x="0.5" data-focus-y="0.00" >
-                            <figure class="snip1205 navy ">
-                                <img  src="img/grid/1.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
-                        <div class="js-focuspoint grid-item grid-item--width3 grid-item--height4 metal"
-                             data-focus-x="0.53" data-focus-y="-0.04" data-category="metal">
-                            <figure class="snip1205 navy ">
-                                <img src="img/grid/2.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
-                        <div class="js-focuspoint grid-item grid-item--width2 grid-item--height2 metal"
-                             data-focus-x="0.50" data-focus-y="-0.08" data-category="metal">
-                            <figure class="snip1205 navy ">
-                                <img src="img/grid/3.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
-                        <div class="js-focuspoint grid-item grid-item--width2 grid-item--height4 alkali"
-                             data-focus-x="-0.5" data-focus-y="0.00" data-category="alkali">
-                            <figure class="snip1205  ">
-                                <img  src="img/grid/4.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
-                        <div class="js-focuspoint  grid-item grid-item--width3 grid-item--height2 alkali"
-                             data-focus-x="0.5" data-focus-y="0.00" data-category="alkali" >
-                            <figure class="snip1205 navy ">
-                                <img  src="img/grid/6.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
-                        <div class="js-focuspoint  grid-item grid-item--width2 grid-item--height2 transition"
-                             data-focus-x="0.01" data-focus-y="0.34" data-category="transition" >
-                            <figure class="snip1205 navy ">
-                                <img  src="img/grid/7.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
-                        <div class="js-focuspoint  grid-item grid-item--width2 grid-item--height3 transition"
-                             data-focus-x="-0.37" data-focus-y="0.07" data-category="transition" >
-                            <figure class="snip1205 navy ">
-                                <img  src="img/grid/5.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
-                        <div class="js-focuspoint  grid-item grid-item--width5 grid-item--height2 transition"
-                             data-focus-x="0.01" data-focus-y="0.14" data-category="transition">
-                            <figure class="snip1205 navy ">
-                                <img  src="img/grid/8.jpg" alt="">
-                                <i class="ion-search"></i>
-                                <a href="#"></a>
-                            </figure>
-                        </div>
+                    <div class="grid2">
+                        <div class="mix blue js-focuspoint grid-item grid-item--width2 grid-item--height2 "
+                                 data-category="metal" data-focus-x="0.5" data-focus-y="0.00" >
+                                <figure class="snip1205 navy ">
+                                    <img  src="img/grid/1.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
+                            <div class="mix red js-focuspoint grid-item grid-item--width3 grid-item--height4 "
+                                 data-focus-x="0.53" data-focus-y="-0.04" >
+                                <figure class="snip1205 navy ">
+                                    <img src="img/grid/2.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
+                            <div class="mix orange js-focuspoint grid-item grid-item--width2 grid-item--height2 "
+                                 data-focus-x="0.50" data-focus-y="-0.08" >
+                                <figure class="snip1205 navy ">
+                                    <img src="img/grid/3.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
+                            <div class="mix blue js-focuspoint grid-item grid-item--width2 grid-item--height4 "
+                                 data-focus-x="-0.5" data-focus-y="0.00" >
+                                <figure class="snip1205  ">
+                                    <img  src="img/grid/4.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
+                            <div class="mix red js-focuspoint  grid-item grid-item--width3 grid-item--height2 "
+                                 data-focus-x="0.5" data-focus-y="0.00"  >
+                                <figure class="snip1205 navy ">
+                                    <img  src="img/grid/6.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
+                            <div class="mix orange js-focuspoint  grid-item grid-item--width2 grid-item--height2 "
+                                 data-focus-x="0.01" data-focus-y="0.34"  >
+                                <figure class="snip1205 navy ">
+                                    <img  src="img/grid/7.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
+                            <div class="mix red js-focuspoint  grid-item grid-item--width2 grid-item--height3 "
+                                 data-focus-x="-0.37" data-focus-y="0.07"  >
+                                <figure class="snip1205 navy ">
+                                    <img  src="img/grid/5.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
+                            <div class="mix blue js-focuspoint  grid-item grid-item--width5 grid-item--height2 "
+                                 data-focus-x="0.01" data-focus-y="0.14" >
+                                <figure class="snip1205 navy ">
+                                    <img  src="img/grid/8.jpg" alt="">
+                                    <i class="ion-search"></i>
+                                    <a href="#"></a>
+                                </figure>
+                            </div>
                     </div>
-                </div>
                     <div class="grid_readmore">
                         <div class="button">
                             <a href="#button-txt" class="button-txt">все работы</a>
@@ -109,19 +110,8 @@
 </section>
 
 
+
 <link rel="stylesheet" href="css/main.min.css">
 <script src="js/scripts.min.js"></script>
-
-<script>
-    $(function() {
-        $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: 160,
-            isFitWidth: true,
-            gutter: 5,
-            transitionDuration: '0.8s'
-        });
-    });
-</script>
 </body>
 </html>

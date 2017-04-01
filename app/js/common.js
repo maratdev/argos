@@ -1,10 +1,7 @@
 $(document).ready(function(){
 
-
-
+    // Портфолио--> изображение на весь блок
     $('.js-focuspoint').focusPoint();
-
-
 
 
     //Header во весь экран
@@ -17,7 +14,6 @@ $(document).ready(function(){
     });
 
 
-
     // Хедер--> Видео
     var hasMask = document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Mask", "1.0");
     if (!hasMask) {
@@ -26,14 +22,7 @@ $(document).ready(function(){
     }
 
 
-    $(".hover").mouseleave(
-        function () {
-            $(this).removeClass("hover");
-        }
-    );
-
-
-
+    // Наши клиенты--> карусель
     $(".owl-carousel").owlCarousel({
         autoplay:true,
         autoplayTimeout:3000,
@@ -73,61 +62,139 @@ $(document).ready(function(){
                 items:4
             }
         }
+
     });
 
 
+    /**
+     * main.js
+     * http://www.codrops.com
+     *
+     * Licensed under the MIT license.
+     * http://www.opensource.org/licenses/mit-license.php
+     *
+     * Copyright 2015, Codrops
+     * http://www.codrops.com
+     */
+    ;(function(window) {
 
+        'use strict';
 
+        var support = { animations : Modernizr.cssanimations },
+            animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
+            animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
+            onEndAnimation = function( el, callback ) {
+                var onEndCallbackFn = function( ev ) {
+                    if( support.animations ) {
+                        if( ev.target != this ) return;
+                        this.removeEventListener( animEndEventName, onEndCallbackFn );
+                    }
+                    if( callback && typeof callback === 'function' ) { callback.call(); }
+                };
+                if( support.animations ) {
+                    el.addEventListener( animEndEventName, onEndCallbackFn );
+                }
+                else {
+                    onEndCallbackFn();
+                }
+            };
 
-// init Isotope
-    var $grid2 = $('#grid2').isotope({
-        layoutMode: 'fitRows',
-        getSortData: {
-            name: '.name',
-            symbol: '.symbol',
-            number: '.number parseInt',
-            category: '[data-category]',
+        // from http://www.sberry.me/articles/javascript-event-throttling-debouncing
+        function throttle(fn, delay) {
+            var allowSample = true;
+
+            return function(e) {
+                if (allowSample) {
+                    allowSample = false;
+                    setTimeout(function() { allowSample = true; }, delay);
+                    fn(e);
+                }
+            };
         }
-    });
 
-// filter functions
-    var filterFns = {
-        // show if number is greater than 50
-        numberGreaterThan50: function() {
-            var number = $(this).find('.number').text();
-            return parseInt( number, 10 ) > 50;
-        },
-        // show if name ends with -ium
-        ium: function() {
-            var name = $(this).find('.name').text();
-            return name.match( /ium$/ );
+        // sliders - flickity
+        var sliders = [].slice.call(document.querySelectorAll('.slider')),
+        // array where the flickity instances are going to be stored
+            flkties = [],
+        // grid element
+            grid = document.querySelector('.grid'),
+        // isotope instance
+            iso,
+        // filter ctrls
+            filterCtrls = [].slice.call(document.querySelectorAll('.filter > .button'));
+
+
+        function init() {
+            // preload images
+            imagesLoaded(grid, function() {
+                initFlickity();
+                initIsotope();
+                initEvents();
+                classie.remove(grid, 'grid--loading');
+            });
         }
-    };
 
-// bind filter button click
-    $('#filters').on( 'click', '.button-txt', function() {
-        var filterValue = $( this ).attr('data-filter');
-        // use filterFn if matches value
-        filterValue = filterFns[ filterValue ] || filterValue;
-        $grid2.isotope({ filter: filterValue });
-    });
+        function initFlickity() {
+            sliders.forEach(function(slider){
+                var flkty = new Flickity(slider, {
+                    prevNextButtons: false,
+                    wrapAround: true,
+                    cellAlign: 'left',
+                    contain: true,
+                    resize: false
+                });
+
+                // store flickity instances
+                flkties.push(flkty);
+            });
+        }
+
+        function initIsotope() {
+            iso = new Isotope( grid, {
+                isResizeBound: false,
+                itemSelector: '.grid__item',
+                percentPosition: true,
+                masonry: {
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid__sizer'
+                },
+                transitionDuration: '0.6s'
+            });
+        }
+
+        function initEvents() {
+            filterCtrls.forEach(function(filterCtrl) {
+                filterCtrl.addEventListener('click', function() {
+                    classie.remove(filterCtrl.parentNode.querySelector('.filter__item--selected'), 'filter__item--selected');
+                    classie.add(filterCtrl, 'filter__item--selected');
+                    iso.arrange({
+                        filter: filterCtrl.getAttribute('data-filter')
+                    });
+                    recalcFlickities();
+                    iso.layout();
+                });
+            });
+
+            // window resize / recalculate sizes for both flickity and isotope/masonry layouts
+            window.addEventListener('resize', throttle(function(ev) {
+                recalcFlickities()
+                iso.layout();
+            }, 50));
+
+
+        }
 
 
 
-// change is-checked class on buttons
-    $('.button-group').each( function( i, buttonGroup ) {
-        var $buttonGroup = $( buttonGroup );
-        $buttonGroup.on( 'click', '.button-txt', function() {
-            $buttonGroup.find('.is-checked').removeClass('is-checked');
-            $( this ).addClass('is-checked');
-        });
-    });
+        function recalcFlickities() {
+            for(var i = 0, len = flkties.length; i < len; ++i) {
+                flkties[i].resize();
+            }
+        }
 
+        init();
 
-
-
-
-
+    })(window);
 });
 
 

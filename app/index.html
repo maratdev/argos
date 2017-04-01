@@ -167,93 +167,70 @@
 </section>
 
 <section class="portfolio">
-	<h2 class="service__title">Портфолио</h2>
 	<div class="container">
 		<div class="row">
+			<!-- Bottom bar with filter and cart info -->
 			<div class="portfolio__wrapper">
-				<div class="portfolio_buttons">
-					<div class="button">
-						<a href="#button-txt" class="button-txt">вывески</a>
+				<div class="filter portfolio_buttons">
+					<div class="button button-txt  filter__item--selected" data-filter="*">
+						<a href="#filters">Все работы</a>
 					</div>
-					<div class="button">
-						<a href="#button-txt2" class="button-txt">3d муляжи</a>
+					<div class="button button-txt " data-filter=".signboards">
+						<a href="#filters">вывески</a>
 					</div>
-					<div class="button">
-						<a href="#button-txt3" class="button-txt">освещение</a>
+					<div class="button button-txt " data-filter=".3ds">
+						<a href="#filters">3D технологи</a>
 					</div>
-					<div class="button">
-						<a href="#button-txt4" class="button-txt">резка</a>
+					<div class="button button-txt " data-filter=".lighting">
+						<a href="#filters">освещение</a>
 					</div>
+					<div class="button button-txt " data-filter=".cutting">
+						<a href="#filters">резка</a>
+					</div>
+
 				</div>
-				<div class="portfolio_grid">
-					<div class="grid">
-						<div class="js-focuspoint  grid-item grid-item--width2 grid-item--height2" data-focus-x="0.5" data-focus-y="0.00" >
-							<figure class="snip1205 navy ">
-							<img  src="img/grid/1.jpg" alt="">
-								<i class="ion-search"></i>
-								<a href="#"></a>
-							</figure>
-						</div>
-						<div class="js-focuspoint  grid-item grid-item--width3 grid-item--height4"
-							 data-focus-x="0.53" data-focus-y="-0.04">
-							<figure class="snip1205 navy ">
-							<img src="img/grid/2.jpg" alt="">
-								<i class="ion-search"></i>
-								<a href="#"></a>
-							</figure>
-						</div>
-						<div class="js-focuspoint grid-item grid-item--width2 grid-item--height2" data-focus-x="0.50" data-focus-y="-0.08" >
-							<figure class="snip1205 navy ">
-							<img src="img/grid/3.jpg" alt="">
-							<i class="ion-search"></i>
-							<a href="#"></a>
-							</figure>
-						</div>
-						<div class="js-focuspoint grid-item grid-item--width2 grid-item--height4" data-focus-x="-0.5" data-focus-y="0.00" >
-							<figure class="snip1205  ">
-								<img  src="img/grid/4.jpg" alt="">
-								<i class="ion-search"></i>
-								<a href="#"></a>
-							</figure>
-						</div>
-						<div class="js-focuspoint  grid-item grid-item--width3 grid-item--height2" data-focus-x="0.5" data-focus-y="0.00" >
-							<figure class="snip1205 navy ">
-								<img  src="img/grid/6.jpg" alt="">
-								<i class="ion-search"></i>
-								<a href="#"></a>
-							</figure>
-						</div>
-						<div class="js-focuspoint  grid-item grid-item--width2 grid-item--height2" data-focus-x="0.01" data-focus-y="0.34" >
-							<figure class="snip1205 navy ">
-								<img  src="img/grid/7.jpg" alt="">
-								<i class="ion-search"></i>
-								<a href="#"></a>
-							</figure>
-						</div>
-						<div class="js-focuspoint  grid-item grid-item--width2 grid-item--height3" data-focus-x="-0.37" data-focus-y="0.07" >
-							<figure class="snip1205 navy ">
-								<img  src="img/grid/5.jpg" alt="">
-								<i class="ion-search"></i>
-								<a href="#"></a>
-							</figure>
-						</div>
-						<div class="js-focuspoint  grid-item grid-item--width5 grid-item--height2" data-focus-x="0.01" data-focus-y="0.14" >
-							<figure class="snip1205 navy ">
-								<img  src="img/grid/8.jpg" alt="">
-								<i class="ion-search"></i>
-								<a href="#"></a>
-							</figure>
-						</div>
-					</div>
-					<div class="grid_readmore">
-						<div class="button">
-							<a href="#button-txt" class="button-txt">все работы</a>
-						</div>
-					</div>
 			</div>
-		</div>
+			<!-- Main view -->
+			<div class="view">
+				<!-- Grid -->
+				<section class="grid">
+					<!-- Loader -->
+					<img class="grid__loader" src="img/grid/grid.svg" width="60" alt="Loader image" />
+					<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+					<div class="grid__sizer"></div>
+					<!-- Grid items -->
+					<div class="grid__item signboards ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/1.jpg" alt="product1_1" /></div>
+							<div class="slider__item"><img src="img/grid/1a.jpg" alt="product1_2" /></div>
+							<div class="slider__item"><img src="img/grid/1b.jpg" alt="product1_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+
+					</div>
+					<div class="grid__item grid__item--size-a signboards">
+						<div class="slider">
+							<div class="slider__item"><img src="img/grid/2.jpg" alt="product1_1" /></div>
+							<div class="slider__item"><img src="img/grid/2_1.jpg" alt="product1_2" /></div>
+							<div class="slider__item"><img src="img/grid/2_2.jpg" alt="product1_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+
+
+				</section>
+				<!-- /grid-->
+			</div>
+			<!-- /view -->
 		</div>
 	</div>
+
 </section>
 
 <section class="clients">

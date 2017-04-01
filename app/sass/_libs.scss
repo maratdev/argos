@@ -1,5 +1,9 @@
 @import "app/libs/bootstrap-grid/bootstrap-grid";
-@import "app/libs/grid/grid";
+
+@import "app/libs/grid3/css/component";
+@import "app/libs/grid3/css/flickity";
+
+
 @import "app/libs/focuspoint/focuspoint";
 @import "app/libs/owl-carousel/css/owl.carousel.min";
 @import "app/libs/owl-carousel/css/owl.carousel";
@@ -105,14 +109,3 @@ figure.snip1205.hover i {
 }
 
 //Кнопка подробнее
-
-
-
-
-
-
-
-
-
-
-
