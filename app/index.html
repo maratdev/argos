@@ -2,26 +2,49 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Аргос</title>
-	<meta name="description" content="">
+	<title>Аргос - рекламно производственная компания</title>
+	<meta name="keywords" content="реклама в махачкале, наружная реклама, информационные стенды, плоттерная резка, широкоформатная печать, изготовление вывески, изготовление объемных букв, изготовление трафаретов, ростовые фигуры, рекламное агентство полного цикла, строительство и рекламное оформление АЗС, в махачкале, в дагестане" />
+	<meta name="description" content="Аргос - рекламно производственная компания">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="Voredev">
+	<meta name="copyright" content="&copy; Voredev 2013-2017">
+	<meta name="robots" content="index, follow">
+	<meta name="geo.placename" content="Махачкала" />
+
+	<meta property="og:image" content="http://www.dagargos.ru/img/icon_325x325.png">
+	<meta property="og:site_name" content="Аргос">
+	<meta property="og:title" content="Аргос - рекламно производственная компания">
+	<meta property="og:description" content="Argos - Рекламно-производственная наши услуги это: изготовление вывесок, выставки, бизнес-сувениры, подарки, полиграфия, POS материалы в г. Махачкала" />
+	<meta property="og:url" content="http://www.dagargos.ru/">
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="ru_RU">
+
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <!-- Хак Firefox  -->
     <style>
-        @-moz-document url-prefix(http://localhost:3000/app/)
-        {text{text-anchor:middle;}@media only screen and (max-width : 480px){text{text-anchor:inherit;}}}
+		@supports (-moz-appearance:none) {
+			.hidden-moz {
+				display: none !important;
+
+			}
+			.header .header__svg_header svg text.hidden {
+				display:inline !important;
+
+			}
+		}
+
     </style>
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#7a797e">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#7a797e">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#7a797e">
 </head>
 <body>
 <header class="header js-max-height">
@@ -29,7 +52,7 @@
 		<div class="container">
 			<div class="row">
 				<a href="/" class="logo">
-					<img class="logo__img" src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="Логотип Аргос" title="Логотип Аргос" >
+					<img class="logo__img" src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'" alt="Логотип Аргос" title="Логотип Аргос">
 				</a>
 			</div>
 		</div>
@@ -43,8 +66,8 @@
         <p class="hc_slogan">Мы работаем на Ваш успех</p>
     </div>
     <div class="header__button-cont col-lg-3 col-md-3 col-lg-push-3 col-md-push-3">
-        <div class="button">
-            <a href="#button-txt" class="button-txt">cвязаться</a>
+        <div class="button popup">
+            <a href="#test-popup" class="button-txt" data-effect="mfp-3d-unfold">cвязаться</a>
         </div>
     </div>
     <div class="header__social col-lg-7 col-md-9 col-lg-push-3 col-md-push-3" >
@@ -59,7 +82,13 @@
 			<mask id="mask" >
 				<rect width="100%" height="100%"/>
 
-				<text  y="34.6%" x="33.9%" class="hidden-sm hidden-xs" >
+				<text  y="34.6%" x="18.9%" class="hidden hidden-sm hidden-xs" >
+					<tspan dx="0px" dy="1em">РЕКЛАМНО</tspan>
+					<tspan dx="-620px" dy="1em">ПРОИЗВОДСТВЕННАЯ</tspan>
+					<tspan dx="-336px"  dy="1em">КОМПАНИЯ</tspan>
+				</text>
+
+				<text  y="34.6%" x="33.9%" class="hidden-moz hidden-sm hidden-xs" >
 					<tspan dx="0px" dy="1em">РЕКЛАМНО</tspan>
 					<tspan dx="-620px" dy="1em">ПРОИЗВОДСТВЕННАЯ</tspan>
 					<tspan dx="-336px"  dy="1em">КОМПАНИЯ</tspan>
@@ -124,8 +153,8 @@
 			</div>
 		</div>
 		<div class="service__button">
-			<div class="button">
-				<a href="#button-txt" class="button-txt">все услуги</a>
+			<div class="button popup">
+				<a href="#test-popup" class="button-txt" data-effect="mfp-3d-unfold">все услуги</a>
 			</div>
 		</div>
     </div>
@@ -167,6 +196,7 @@
 </section>
 
 <section class="portfolio">
+	<h2 class="service__title">Портфолио</h2>
 	<div class="container">
 		<div class="row">
 			<!-- Bottom bar with filter and cart info -->
@@ -209,13 +239,23 @@
 							<i class="ion-search"></i>
 							<span class="text-hidden">Увеличить</span>
 						</button>
-
 					</div>
+
 					<div class="grid__item grid__item--size-a signboards">
 						<div class="slider">
-							<div class="slider__item"><img src="img/grid/2.jpg" alt="product1_1" /></div>
-							<div class="slider__item"><img src="img/grid/2_1.jpg" alt="product1_2" /></div>
-							<div class="slider__item"><img src="img/grid/2_2.jpg" alt="product1_3" /></div>
+							<div class="slider__item"><img src="img/grid/2.jpg" alt="product2_1" /></div>
+							<div class="slider__item"><img src="img/grid/2_1.jpg" alt="product2_2" /></div>
+							<div class="slider__item"><img src="img/grid/2_2.jpg" alt="product2_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/3.jpg" alt="product3_1" /></div>
+							<div class="slider__item"><img src="img/grid/3_1.jpg" alt="product3_2" /></div>
 						</div>
 						<button class="action action--button action--buy">
 							<i class="ion-search"></i>
@@ -223,7 +263,161 @@
 						</button>
 					</div>
 
+					<div class="grid__item 3ds ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/4.jpg" alt="product4_1" /></div>
+							<div class="slider__item"><img src="img/grid/4_1.jpg" alt="product4_2" /></div>
+							<div class="slider__item"><img src="img/grid/4_2.jpg" alt="product4_3" /></div>
+							<div class="slider__item"><img src="img/grid/4_3.jpg" alt="product4_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards grid__item--size-a ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/5.jpg" alt="product5_1" /></div>
+							<div class="slider__item"><img src="img/grid/5.jpg" alt="product5_2" /></div>
+							<div class="slider__item"><img src="img/grid/5.jpg" alt="product5_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards lighting ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/6.jpg" alt="product6_1" /></div>
+							<div class="slider__item"><img src="img/grid/6_1.jpg" alt="product6_2" /></div>
+							<div class="slider__item"><img src="img/grid/6_2.jpg" alt="product6_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item grid__item--size-a signboards">
+						<div class="slider">
+							<div class="slider__item"><img src="img/grid/7.jpg" alt="product2_1" /></div>
+							<div class="slider__item"><img src="img/grid/7_1.jpg" alt="product2_2" /></div>
+							<div class="slider__item"><img src="img/grid/7_2.jpg" alt="product2_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/8.jpg" alt="product1_1" /></div>
+							<div class="slider__item"><img src="img/grid/8_1.jpg" alt="product1_2" /></div>
+							<div class="slider__item"><img src="img/grid/8_2.jpg" alt="product1_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/9.jpg" alt="product1_1" /></div>
+							<div class="slider__item"><img src="img/grid/9_1.jpg" alt="product1_2" /></div>
+							<div class="slider__item"><img src="img/grid/9_2.jpg" alt="product1_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/10.jpg" alt="product1_1" /></div>
+							<div class="slider__item"><img src="img/grid/10_1.jpg" alt="product1_2" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards grid__item--size-a ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/11.jpg" alt="product5_1" /></div>
+							<div class="slider__item"><img src="img/grid/11_1.jpg" alt="product5_2" /></div>
+							<div class="slider__item"><img src="img/grid/11_2.jpg" alt="product5_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards  ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/12.jpg" alt="product6_1" /></div>
+							<div class="slider__item"><img src="img/grid/12_1.jpg" alt="product6_2" /></div>
+							<div class="slider__item"><img src="img/grid/12_2.jpg" alt="product6_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
 
+					<div class="grid__item signboards  grid__item--size-a ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/14.jpg" alt="product5_1" /></div>
+							<div class="slider__item"><img src="img/grid/14_1.jpg" alt="product5_2" /></div>
+							<div class="slider__item"><img src="img/grid/14_2.jpg" alt="product5_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item grid__item--size-a signboards lighting">
+						<div class="slider">
+							<div class="slider__item"><img src="img/grid/13.jpg" alt="product2_1" /></div>
+							<div class="slider__item"><img src="img/grid/13_1.jpg" alt="product2_2" /></div>
+							<div class="slider__item"><img src="img/grid/13_2.jpg" alt="product2_3" /></div>
+							<div class="slider__item"><img src="img/grid/13_3.jpg" alt="product2_3" /></div>
+							<div class="slider__item"><img src="img/grid/13_4.jpg" alt="product2_3" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards  ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/15.jpg" alt="product6_1" /></div>
+							<div class="slider__item"><img src="img/grid/15_1.jpg" alt="product6_2" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards lighting">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/16.jpg" alt="product1_1" /></div>
+							<div class="slider__item"><img src="img/grid/16_1.jpg" alt="product1_2" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
+					<div class="grid__item signboards ">
+						<div class=" slider ">
+							<div class="slider__item"><img src="img/grid/17.jpg" alt="product1_1" /></div>
+							<div class="slider__item"><img src="img/grid/17_1.jpg" alt="product1_2" /></div>
+							<div class="slider__item"><img src="img/grid/17_2.jpg" alt="product1_2" /></div>
+						</div>
+						<button class="action action--button action--buy">
+							<i class="ion-search"></i>
+							<span class="text-hidden">Увеличить</span>
+						</button>
+					</div>
 				</section>
 				<!-- /grid-->
 			</div>
@@ -232,6 +426,7 @@
 	</div>
 
 </section>
+
 
 <section class="clients">
 	<div class="container">
@@ -271,7 +466,6 @@
 	</div>
 
 </section>
-
 <section class="contacts">
 	<div class="container-fluid">
 		<div class="row">
@@ -300,6 +494,34 @@
 		</div>
 	</div>
 </section>
+
+<!-- Popup itself -->
+<div id="test-popup" class="white-popup mfp-with-anim mfp-hide contacts-formal">
+	<form id="callback" class="clearfix ">
+		<div class="success clearfix">
+			Спасибо за заявку! <br> Наши менеджеры свяжуться с вами в ближайшее время
+		</div>
+		<h3>Заказать обратный звонок</h3>
+		<input type="hidden" name="project_name" value="Argos">
+		<input type="hidden" name="admin_email" value="firma-001@mail.ru">
+		<input type="hidden" name="form_subject" value="Заказ обратного звонка с сайта Аргос">
+		<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<input type="text" name="Имя" class="form-control" id="exampleInputName" placeholder="Магомед Магомедов" required>
+		</div>
+		<div class="form-group col-lg-12 col-md-6 col-sm-12 col-xs-12">
+			<input type="email" name="Почта" class="form-control" id="exampleInputEmail" placeholder="Email" required>
+		</div>
+		<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<input type="tel" name="Телефон" data-minlength="11" class="form-control" id="inputPassword" placeholder="8(123)-456-78-90" required>
+		</div>
+		<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<textarea name="Сообщение" class="form-control" rows="10" placeholder="Сообщение" ></textarea>
+		</div>
+		<div class="form-group col-md-12 col-sm-12 col-xs-12">
+			<button type="submit" class="button button--isi "><span>Отправить</span></button>
+		</div>
+	</form>
+</div>
 <link rel="stylesheet" href="css/main.min.css">
 <script src="js/scripts.min.js"></script>
 </body>

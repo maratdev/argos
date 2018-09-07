@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="55ed45a7-9fee-4fe6-b4f1-6a50f097b7c0" name="argos" url="http://starsp.beget.tech">
+        <fileTransfer host="starsp.beget.tech" port="21" password="dfc7dfcbdfd8dfcbdfdedf9ddf9ddfe5" username="starsp_argos">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

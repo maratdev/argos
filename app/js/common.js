@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     // Портфолио--> изображение на весь блок
     $('.js-focuspoint').focusPoint();
 
@@ -43,6 +45,10 @@ $(document).ready(function(){
             }
         }
     });
+
+
+
+
     $(".owl-carousel2").owlCarousel({
         autoplay:true,
         autoplayTimeout:3000,
@@ -64,6 +70,7 @@ $(document).ready(function(){
         }
 
     });
+
 
 
     /**
@@ -195,8 +202,54 @@ $(document).ready(function(){
         init();
 
     })(window);
+
+
 });
 
+
+
+$(function() {
+
+    // Inline popups
+    $('.popup a').magnificPopup({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300, //delay removal by X to allow out-animation
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass = this.st.el.attr('data-effect');
+            }
+        }
+    });
+
+
+
+    //E-mail Ajax Send
+    //Documentation & Example: https://github.com/agragregra/uniMail
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            $('.success').addClass("visible");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+                $('.success').removeClass("visible");
+                $.magnificPopup.close();
+            }, 2500);
+        });
+        return false;
+    });
+
+});
 
 
 

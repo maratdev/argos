@@ -169,6 +169,15 @@
   .service{
     .service__block{
       margin-top: -17px;
+
+      .item{
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(n+4){
+          border: none !important;
+        }
+
+      }
     }
   }
   .portfolio__wrapper{
